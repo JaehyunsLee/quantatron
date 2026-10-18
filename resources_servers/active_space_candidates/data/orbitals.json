@@ -1,0 +1,7468 @@
+{
+ "mp-1017591": {
+  "material_id": "mp-1017591",
+  "name": "BaRuO3",
+  "formula": "BaRuO3",
+  "n_atoms": 5,
+  "gap_eV": 9.959,
+  "e_scf_ha": -166.244585,
+  "ref_cas": "(22e,12o)",
+  "menu": {
+   "c0:2": {
+    "n_electrons": 2,
+    "n_orbitals": 2,
+    "mo_indices": [
+     21,
+     22
+    ],
+    "window_ev": [
+     -4.98,
+     4.98
+    ],
+    "character": {
+     "O 2p": 0.84,
+     "O 3p": 0.121
+    },
+    "log10_toffolis": 5.705
+   },
+   "c1:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -5.691,
+     4.98
+    ],
+    "character": {
+     "O 2p": 0.834,
+     "O 3p": 0.127
+    },
+    "log10_toffolis": 6.069
+   },
+   "c2:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -6.115,
+     4.98
+    ],
+    "character": {
+     "Ru 4d": 0.245,
+     "O 2p": 0.626,
+     "O 3p": 0.095
+    },
+    "log10_toffolis": 6.274
+   },
+   "c3:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -6.175,
+     4.98
+    ],
+    "character": {
+     "Ru 4d": 0.393,
+     "O 2p": 0.5,
+     "O 3p": 0.076
+    },
+    "log10_toffolis": 6.465
+   },
+   "c4:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -6.205,
+     4.98
+    ],
+    "character": {
+     "Ru 4d": 0.491,
+     "O 2p": 0.417,
+     "O 3p": 0.063
+    },
+    "log10_toffolis": 6.747
+   },
+   "c5:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -6.551,
+     4.98
+    ],
+    "character": {
+     "Ru 4d": 0.421,
+     "O 2p": 0.483,
+     "O 3p": 0.064
+    },
+    "log10_toffolis": 6.855
+   },
+   "c6:8": {
+    "n_electrons": 14,
+    "n_orbitals": 8,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -6.575,
+     4.98
+    ],
+    "character": {
+     "Ru 4d": 0.368,
+     "O 2p": 0.531,
+     "O 3p": 0.065
+    },
+    "log10_toffolis": 6.948
+   },
+   "c7:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -7.453,
+     4.98
+    ],
+    "character": {
+     "Ru 4d": 0.327,
+     "O 2p": 0.571,
+     "O 3p": 0.068
+    },
+    "log10_toffolis": 7.178
+   },
+   "c8:10": {
+    "n_electrons": 18,
+    "n_orbitals": 10,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -8.264,
+     4.98
+    ],
+    "character": {
+     "Ru 4d": 0.295,
+     "O 2p": 0.598,
+     "O 3p": 0.071
+    },
+    "log10_toffolis": 7.414
+   },
+   "c9:11": {
+    "n_electrons": 20,
+    "n_orbitals": 11,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -8.699,
+     4.98
+    ],
+    "character": {
+     "Ru 4d": 0.268,
+     "O 2p": 0.62,
+     "O 3p": 0.073
+    },
+    "log10_toffolis": 7.534
+   }
+  }
+ },
+ "mp-1068742": {
+  "material_id": "mp-1068742",
+  "name": "SrZrO3",
+  "formula": "SrZrO3",
+  "n_atoms": 5,
+  "gap_eV": 14.522,
+  "e_scf_ha": -124.541156,
+  "ref_cas": "(18e,12o)",
+  "menu": {
+   "c0:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -7.261,
+     7.261
+    ],
+    "character": {
+     "Zr 4d": 0.338,
+     "O 2p": 0.53,
+     "O 3p": 0.075
+    },
+    "log10_toffolis": 6.075
+   },
+   "c1:5": {
+    "n_electrons": 4,
+    "n_orbitals": 5,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -7.261,
+     7.873
+    ],
+    "character": {
+     "Sr 4d": 0.04,
+     "Zr 4d": 0.551,
+     "O 2p": 0.342,
+     "O 3p": 0.047
+    },
+    "log10_toffolis": 6.677
+   },
+   "c2:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -7.396,
+     7.261
+    ],
+    "character": {
+     "Zr 4d": 0.26,
+     "O 2p": 0.607,
+     "O 3p": 0.076
+    },
+    "log10_toffolis": 6.363
+   },
+   "c3:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -7.396,
+     7.873
+    ],
+    "character": {
+     "Sr 4d": 0.034,
+     "Zr 4d": 0.463,
+     "O 2p": 0.424,
+     "O 3p": 0.052
+    },
+    "log10_toffolis": 6.868
+   },
+   "c4:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -7.789,
+     7.261
+    ],
+    "character": {
+     "Zr 4d": 0.174,
+     "Zr 4f": 0.032,
+     "O 2p": 0.685,
+     "O 3p": 0.085
+    },
+    "log10_toffolis": 6.678
+   },
+   "c5:8": {
+    "n_electrons": 10,
+    "n_orbitals": 8,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -7.789,
+     7.873
+    ],
+    "character": {
+     "Zr 4d": 0.348,
+     "O 2p": 0.529,
+     "O 3p": 0.065
+    },
+    "log10_toffolis": 7.096
+   },
+   "c6:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -7.909,
+     7.261
+    ],
+    "character": {
+     "Zr 4d": 0.152,
+     "Zr 4f": 0.032,
+     "O 2p": 0.704,
+     "O 3p": 0.09
+    },
+    "log10_toffolis": 6.913
+   },
+   "c7:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -7.909,
+     7.873
+    ],
+    "character": {
+     "Zr 4d": 0.311,
+     "O 2p": 0.561,
+     "O 3p": 0.071
+    },
+    "log10_toffolis": 7.266
+   },
+   "c8:8": {
+    "n_electrons": 14,
+    "n_orbitals": 8,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -9.226,
+     7.261
+    ],
+    "character": {
+     "Zr 4d": 0.133,
+     "O 2p": 0.714,
+     "O 3p": 0.092
+    },
+    "log10_toffolis": 7.109
+   },
+   "c9:10": {
+    "n_electrons": 14,
+    "n_orbitals": 10,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -9.226,
+     7.873
+    ],
+    "character": {
+     "Zr 4d": 0.28,
+     "O 2p": 0.583,
+     "O 3p": 0.075
+    },
+    "log10_toffolis": 7.421
+   },
+   "c10:10": {
+    "n_electrons": 18,
+    "n_orbitals": 10,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -9.404,
+     7.261
+    ],
+    "character": {
+     "Zr 4d": 0.111,
+     "O 2p": 0.728,
+     "O 3p": 0.092
+    },
+    "log10_toffolis": 7.5
+   }
+  }
+ },
+ "mp-1120765": {
+  "material_id": "mp-1120765",
+  "name": "BaNiO3",
+  "formula": "BaNiO3",
+  "n_atoms": 5,
+  "gap_eV": 10.143,
+  "e_scf_ha": -240.599431,
+  "ref_cas": "(20e,12o)",
+  "menu": {
+   "c0:2": {
+    "n_electrons": 2,
+    "n_orbitals": 2,
+    "mo_indices": [
+     22,
+     23
+    ],
+    "window_ev": [
+     -5.071,
+     5.071
+    ],
+    "character": {
+     "O 2p": 0.855,
+     "O 3p": 0.13
+    },
+    "log10_toffolis": 5.687
+   },
+   "c1:3": {
+    "n_electrons": 2,
+    "n_orbitals": 3,
+    "mo_indices": [
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -5.071,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.298,
+     "O 2p": 0.57,
+     "O 3p": 0.087
+    },
+    "log10_toffolis": 6.147
+   },
+   "c2:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -6.431,
+     5.071
+    ],
+    "character": {
+     "O 2p": 0.865,
+     "O 3p": 0.117
+    },
+    "log10_toffolis": 5.887
+   },
+   "c3:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -6.431,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.224,
+     "O 2p": 0.649,
+     "O 3p": 0.088
+    },
+    "log10_toffolis": 6.305
+   },
+   "c4:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -6.592,
+     5.071
+    ],
+    "character": {
+     "O 2p": 0.872,
+     "O 3p": 0.107
+    },
+    "log10_toffolis": 6.217
+   },
+   "c5:5": {
+    "n_electrons": 6,
+    "n_orbitals": 5,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -6.592,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.179,
+     "O 2p": 0.698,
+     "O 3p": 0.085
+    },
+    "log10_toffolis": 6.543
+   },
+   "c6:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -7.102,
+     5.071
+    ],
+    "character": {
+     "O 2p": 0.855,
+     "O 3p": 0.116
+    },
+    "log10_toffolis": 6.427
+   },
+   "c7:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -7.102,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.149,
+     "O 2p": 0.713,
+     "O 3p": 0.097
+    },
+    "log10_toffolis": 6.705
+   },
+   "c8:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -8.09,
+     5.071
+    ],
+    "character": {
+     "O 2p": 0.863,
+     "O 3p": 0.112
+    },
+    "log10_toffolis": 6.705
+   },
+   "c9:7": {
+    "n_electrons": 10,
+    "n_orbitals": 7,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -8.09,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.128,
+     "O 2p": 0.74,
+     "O 3p": 0.096
+    },
+    "log10_toffolis": 6.913
+   },
+   "c10:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -8.419,
+     5.071
+    ],
+    "character": {
+     "O 2p": 0.861,
+     "O 3p": 0.112
+    },
+    "log10_toffolis": 6.958
+   },
+   "c11:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -8.419,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.112,
+     "O 2p": 0.753,
+     "O 3p": 0.098
+    },
+    "log10_toffolis": 7.124
+   },
+   "c12:8": {
+    "n_electrons": 14,
+    "n_orbitals": 8,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -9.783,
+     5.071
+    ],
+    "character": {
+     "O 2p": 0.852,
+     "O 3p": 0.112
+    },
+    "log10_toffolis": 7.167
+   },
+   "c13:9": {
+    "n_electrons": 14,
+    "n_orbitals": 9,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -9.783,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.099,
+     "O 2p": 0.758,
+     "O 3p": 0.099
+    },
+    "log10_toffolis": 7.319
+   },
+   "c14:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -9.825,
+     5.071
+    ],
+    "character": {
+     "Ba 5p": 0.03,
+     "O 2p": 0.846,
+     "O 3p": 0.111
+    },
+    "log10_toffolis": 7.363
+   },
+   "c15:10": {
+    "n_electrons": 16,
+    "n_orbitals": 10,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -9.825,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.089,
+     "O 2p": 0.761,
+     "O 3p": 0.1
+    },
+    "log10_toffolis": 7.475
+   },
+   "c16:10": {
+    "n_electrons": 18,
+    "n_orbitals": 10,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -10.22,
+     5.071
+    ],
+    "character": {
+     "Ni 3d": 0.096,
+     "O 2p": 0.761,
+     "O 3p": 0.1
+    },
+    "log10_toffolis": 7.473
+   },
+   "c17:11": {
+    "n_electrons": 18,
+    "n_orbitals": 11,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24
+    ],
+    "window_ev": [
+     -10.22,
+     10.943
+    ],
+    "character": {
+     "Ba 5d": 0.081,
+     "Ni 3d": 0.094,
+     "O 2p": 0.692,
+     "O 3p": 0.091
+    },
+    "log10_toffolis": 7.599
+   },
+   "c18:11": {
+    "n_electrons": 20,
+    "n_orbitals": 11,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -10.807,
+     5.071
+    ],
+    "character": {
+     "Ni 3d": 0.177,
+     "O 2p": 0.692,
+     "O 3p": 0.091
+    },
+    "log10_toffolis": 7.627
+   }
+  }
+ },
+ "mp-1190": {
+  "material_id": "mp-1190",
+  "name": "ZnSe",
+  "formula": "ZnSe",
+  "n_atoms": 2,
+  "gap_eV": 13.851,
+  "e_scf_ha": -67.217896,
+  "ref_cas": "(16e,12o)",
+  "menu": {
+   "c0:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -6.926,
+     6.926
+    ],
+    "character": {
+     "Zn 5s": 0.214,
+     "Zn 3d": 0.033,
+     "Se 4s": 0.037,
+     "Se 4p": 0.595,
+     "Se 5p": 0.054
+    },
+    "log10_toffolis": 6.028
+   },
+   "c1:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -6.926,
+     8.995
+    ],
+    "character": {
+     "Zn 5s": 0.122,
+     "Zn 5p": 0.493,
+     "Se 4p": 0.359,
+     "Se 5p": 0.043,
+     "Se 4d": 0.088
+    },
+    "log10_toffolis": 6.943
+   },
+   "c2:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -15.87,
+     6.926
+    ],
+    "character": {
+     "Zn 5s": 0.143,
+     "Zn 3d": 0.355,
+     "Se 4p": 0.397,
+     "Se 5p": 0.036
+    },
+    "log10_toffolis": 6.836
+   },
+   "c3:9": {
+    "n_electrons": 10,
+    "n_orbitals": 9,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -15.87,
+     8.995
+    ],
+    "character": {
+     "Zn 5s": 0.095,
+     "Zn 5p": 0.383,
+     "Zn 3d": 0.237,
+     "Se 4p": 0.279,
+     "Se 5p": 0.034,
+     "Se 4d": 0.069
+    },
+    "log10_toffolis": 7.345
+   },
+   "c4:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -16.682,
+     6.926
+    ],
+    "character": {
+     "Zn 5s": 0.095,
+     "Zn 3d": 0.558,
+     "Se 4p": 0.277
+    },
+    "log10_toffolis": 7.75
+   }
+  }
+ },
+ "mp-1265": {
+  "material_id": "mp-1265",
+  "name": "MgO",
+  "formula": "MgO",
+  "n_atoms": 2,
+  "gap_eV": 18.758,
+  "e_scf_ha": -78.615957,
+  "ref_cas": "(8e,11o)",
+  "menu": {
+   "c0:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -9.379,
+     9.379
+    ],
+    "character": {
+     "Mg 4s": 0.224,
+     "O 2s": 0.043,
+     "O 2p": 0.636,
+     "O 3p": 0.099
+    },
+    "log10_toffolis": 6.415
+   },
+   "c1:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "window_ev": [
+     -9.379,
+     29.713
+    ],
+    "character": {
+     "Mg 4s": 0.128,
+     "Mg 3p": 0.441,
+     "O 2p": 0.38,
+     "O 3p": 0.036
+    },
+    "log10_toffolis": 7.26
+   },
+   "c2:10": {
+    "n_electrons": 6,
+    "n_orbitals": 10,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "window_ev": [
+     -9.379,
+     53.279
+    ],
+    "character": {
+     "Mg 4s": 0.09,
+     "Mg 3p": 0.309,
+     "O 2p": 0.266,
+     "O 3d": 0.3
+    },
+    "log10_toffolis": 7.768
+   },
+   "c3:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -30.412,
+     9.379
+    ],
+    "character": {
+     "Mg 3s": 0.043,
+     "Mg 4s": 0.175,
+     "O 2s": 0.198,
+     "O 2p": 0.509,
+     "O 3p": 0.079
+    },
+    "log10_toffolis": 6.789
+   },
+   "c4:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "window_ev": [
+     -30.412,
+     29.713
+    ],
+    "character": {
+     "Mg 4s": 0.11,
+     "Mg 3p": 0.386,
+     "O 2s": 0.124,
+     "O 2p": 0.333,
+     "O 3p": 0.031
+    },
+    "log10_toffolis": 7.448
+   }
+  }
+ },
+ "mp-1336": {
+  "material_id": "mp-1336",
+  "name": "PdO",
+  "formula": "PdO",
+  "n_atoms": 4,
+  "gap_eV": 15.922,
+  "e_scf_ha": -284.609067,
+  "ref_cas": "(18e,12o)",
+  "menu": {
+   "c0:3": {
+    "n_electrons": 2,
+    "n_orbitals": 3,
+    "mo_indices": [
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -7.961,
+     7.962
+    ],
+    "character": {
+     "Pd 5s": 0.052,
+     "Pd 4d": 0.608,
+     "O 2p": 0.302
+    },
+    "log10_toffolis": 6.236
+   },
+   "c1:4": {
+    "n_electrons": 2,
+    "n_orbitals": 4,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -7.961,
+     8.6
+    ],
+    "character": {
+     "Pd 5s": 0.229,
+     "Pd 4d": 0.501,
+     "O 2p": 0.226
+    },
+    "log10_toffolis": 6.521
+   },
+   "c2:5": {
+    "n_electrons": 6,
+    "n_orbitals": 5,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -9.175,
+     7.962
+    ],
+    "character": {
+     "Pd 5s": 0.031,
+     "Pd 4d": 0.722,
+     "O 2p": 0.216
+    },
+    "log10_toffolis": 6.618
+   },
+   "c3:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -9.175,
+     8.6
+    ],
+    "character": {
+     "Pd 5s": 0.153,
+     "Pd 4d": 0.632,
+     "O 2p": 0.18
+    },
+    "log10_toffolis": 6.846
+   },
+   "c4:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -9.526,
+     7.962
+    ],
+    "character": {
+     "Pd 4d": 0.602,
+     "O 2p": 0.329
+    },
+    "log10_toffolis": 6.766
+   },
+   "c5:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -9.526,
+     8.6
+    ],
+    "character": {
+     "Pd 5s": 0.131,
+     "Pd 4d": 0.541,
+     "O 2p": 0.282
+    },
+    "log10_toffolis": 6.961
+   },
+   "c6:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -9.543,
+     7.962
+    ],
+    "character": {
+     "Pd 4d": 0.451,
+     "O 2p": 0.464,
+     "O 3p": 0.041
+    },
+    "log10_toffolis": 7.069
+   },
+   "c7:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -9.543,
+     8.6
+    ],
+    "character": {
+     "Pd 5s": 0.102,
+     "Pd 4d": 0.421,
+     "O 2p": 0.412,
+     "O 3p": 0.037
+    },
+    "log10_toffolis": 7.242
+   },
+   "c8:9": {
+    "n_electrons": 14,
+    "n_orbitals": 9,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -10.178,
+     7.962
+    ],
+    "character": {
+     "Pd 4d": 0.51,
+     "O 2p": 0.412,
+     "O 3p": 0.037
+    },
+    "log10_toffolis": 7.18
+   },
+   "c9:10": {
+    "n_electrons": 14,
+    "n_orbitals": 10,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -10.178,
+     8.6
+    ],
+    "character": {
+     "Pd 5s": 0.092,
+     "Pd 4d": 0.477,
+     "O 2p": 0.371,
+     "O 3p": 0.033
+    },
+    "log10_toffolis": 7.343
+   },
+   "c10:10": {
+    "n_electrons": 16,
+    "n_orbitals": 10,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -10.391,
+     7.962
+    ],
+    "character": {
+     "Pd 4d": 0.557,
+     "O 2p": 0.371,
+     "O 3p": 0.033
+    },
+    "log10_toffolis": 7.333
+   },
+   "c11:11": {
+    "n_electrons": 16,
+    "n_orbitals": 11,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -10.391,
+     8.6
+    ],
+    "character": {
+     "Pd 5s": 0.083,
+     "Pd 4d": 0.523,
+     "O 2p": 0.337,
+     "O 3p": 0.03
+    },
+    "log10_toffolis": 7.474
+   },
+   "c12:11": {
+    "n_electrons": 18,
+    "n_orbitals": 11,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -10.482,
+     7.962
+    ],
+    "character": {
+     "Pd 4d": 0.583,
+     "O 2p": 0.337,
+     "O 3p": 0.03
+    },
+    "log10_toffolis": 7.456
+   }
+  }
+ },
+ "mp-149": {
+  "material_id": "mp-149",
+  "name": "Si",
+  "formula": "Si",
+  "n_atoms": 2,
+  "gap_eV": 14.112,
+  "e_scf_ha": -7.09527,
+  "ref_cas": "(8e,10o)",
+  "menu": {
+   "c0:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "window_ev": [
+     -7.056,
+     7.056
+    ],
+    "character": {
+     "Si 3p": 1.379,
+     "Si 3d": 0.135
+    },
+    "log10_toffolis": 6.722
+   },
+   "c1:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "window_ev": [
+     -7.056,
+     9.26
+    ],
+    "character": {
+     "Si 3s": 0.148,
+     "Si 3p": 1.182,
+     "Si 3d": 0.115
+    },
+    "log10_toffolis": 6.958
+   },
+   "c2:9": {
+    "n_electrons": 6,
+    "n_orbitals": 9,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -7.056,
+     15.33
+    ],
+    "character": {
+     "Si 3s": 0.115,
+     "Si 3p": 0.919,
+     "Si 3d": 0.312
+    },
+    "log10_toffolis": 7.361
+   },
+   "c3:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "window_ev": [
+     -19.482,
+     7.056
+    ],
+    "character": {
+     "Si 3s": 0.147,
+     "Si 3p": 1.182,
+     "Si 3d": 0.115
+    },
+    "log10_toffolis": 6.928
+   },
+   "c4:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "window_ev": [
+     -19.482,
+     9.26
+    ],
+    "character": {
+     "Si 3s": 0.258,
+     "Si 3p": 1.034,
+     "Si 3d": 0.101
+    },
+    "log10_toffolis": 7.161
+   }
+  }
+ },
+ "mp-1500": {
+  "material_id": "mp-1500",
+  "name": "BaS",
+  "formula": "BaS",
+  "n_atoms": 2,
+  "gap_eV": 13.448,
+  "e_scf_ha": -35.281323,
+  "ref_cas": "(8e,10o)",
+  "menu": {
+   "c0:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -6.724,
+     6.724
+    ],
+    "character": {
+     "Ba 5d": 0.476,
+     "S 3p": 0.367,
+     "S 4p": 0.132
+    },
+    "log10_toffolis": 6.793
+   },
+   "c1:8": {
+    "n_electrons": 6,
+    "n_orbitals": 8,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -6.724,
+     7.504
+    ],
+    "character": {
+     "Ba 5d": 0.587,
+     "S 3p": 0.275,
+     "S 4p": 0.099,
+     "S 3d": 0.038
+    },
+    "log10_toffolis": 7.195
+   },
+   "c2:9": {
+    "n_electrons": 6,
+    "n_orbitals": 9,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "window_ev": [
+     -6.724,
+     10.733
+    ],
+    "character": {
+     "Ba 7s": 0.101,
+     "Ba 5d": 0.522,
+     "S 3p": 0.245,
+     "S 4p": 0.088,
+     "S 3d": 0.034
+    },
+    "log10_toffolis": 7.335
+   },
+   "c3:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -19.259,
+     6.724
+    ],
+    "character": {
+     "Ba 5d": 0.408,
+     "S 3s": 0.129,
+     "S 3p": 0.314,
+     "S 4p": 0.113
+    },
+    "log10_toffolis": 7.038
+   },
+   "c4:9": {
+    "n_electrons": 8,
+    "n_orbitals": 9,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -19.259,
+     7.504
+    ],
+    "character": {
+     "Ba 5d": 0.522,
+     "S 3s": 0.1,
+     "S 3p": 0.245,
+     "S 4p": 0.088,
+     "S 3d": 0.034
+    },
+    "log10_toffolis": 7.376
+   }
+  }
+ },
+ "mp-1595": {
+  "material_id": "mp-1595",
+  "name": "Nb2O5",
+  "formula": "Nb2O5",
+  "n_atoms": 7,
+  "gap_eV": 13.153,
+  "e_scf_ha": -191.979953,
+  "ref_cas": "(14e,12o)",
+  "menu": {
+   "c0:2": {
+    "n_electrons": 2,
+    "n_orbitals": 2,
+    "mo_indices": [
+     27,
+     28
+    ],
+    "window_ev": [
+     -6.577,
+     6.577
+    ],
+    "character": {
+     "Nb 4d": 0.497,
+     "O 2p": 0.448,
+     "O 3p": 0.045
+    },
+    "log10_toffolis": 5.526
+   },
+   "c1:3": {
+    "n_electrons": 2,
+    "n_orbitals": 3,
+    "mo_indices": [
+     27,
+     28,
+     29
+    ],
+    "window_ev": [
+     -6.577,
+     7.065
+    ],
+    "character": {
+     "Nb 4d": 0.631,
+     "O 2p": 0.329,
+     "O 3p": 0.036
+    },
+    "log10_toffolis": 6.054
+   },
+   "c2:4": {
+    "n_electrons": 2,
+    "n_orbitals": 4,
+    "mo_indices": [
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -6.577,
+     7.121
+    ],
+    "character": {
+     "Nb 4d": 0.692,
+     "O 2p": 0.281,
+     "O 3p": 0.031
+    },
+    "log10_toffolis": 6.394
+   },
+   "c3:5": {
+    "n_electrons": 2,
+    "n_orbitals": 5,
+    "mo_indices": [
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -6.577,
+     8.418
+    ],
+    "character": {
+     "Nb 4d": 0.716,
+     "O 2p": 0.262
+    },
+    "log10_toffolis": 6.684
+   },
+   "c4:6": {
+    "n_electrons": 2,
+    "n_orbitals": 6,
+    "mo_indices": [
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "window_ev": [
+     -6.577,
+     8.842
+    ],
+    "character": {
+     "Nb 4d": 0.729,
+     "O 2p": 0.253
+    },
+    "log10_toffolis": 6.9
+   },
+   "c5:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -7.148,
+     6.577
+    ],
+    "character": {
+     "Nb 4d": 0.377,
+     "O 2p": 0.55,
+     "O 3p": 0.052
+    },
+    "log10_toffolis": 5.924
+   },
+   "c6:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     26,
+     27,
+     28,
+     29
+    ],
+    "window_ev": [
+     -7.148,
+     7.065
+    ],
+    "character": {
+     "Nb 4d": 0.508,
+     "O 2p": 0.435,
+     "O 3p": 0.043
+    },
+    "log10_toffolis": 6.303
+   },
+   "c7:5": {
+    "n_electrons": 4,
+    "n_orbitals": 5,
+    "mo_indices": [
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -7.148,
+     7.121
+    ],
+    "character": {
+     "Nb 4d": 0.581,
+     "O 2p": 0.375,
+     "O 3p": 0.037
+    },
+    "log10_toffolis": 6.566
+   },
+   "c8:6": {
+    "n_electrons": 4,
+    "n_orbitals": 6,
+    "mo_indices": [
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -7.148,
+     8.418
+    ],
+    "character": {
+     "Nb 4d": 0.62,
+     "O 2p": 0.344,
+     "O 3p": 0.032
+    },
+    "log10_toffolis": 6.843
+   },
+   "c9:7": {
+    "n_electrons": 4,
+    "n_orbitals": 7,
+    "mo_indices": [
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "window_ev": [
+     -7.148,
+     8.842
+    ],
+    "character": {
+     "Nb 4d": 0.645,
+     "O 2p": 0.324
+    },
+    "log10_toffolis": 7.038
+   },
+   "c10:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -7.51,
+     6.577
+    ],
+    "character": {
+     "Nb 4d": 0.316,
+     "O 2p": 0.6,
+     "O 3p": 0.055
+    },
+    "log10_toffolis": 6.267
+   },
+   "c11:5": {
+    "n_electrons": 6,
+    "n_orbitals": 5,
+    "mo_indices": [
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "window_ev": [
+     -7.51,
+     7.065
+    ],
+    "character": {
+     "Nb 4d": 0.433,
+     "O 2p": 0.498,
+     "O 3p": 0.048
+    },
+    "log10_toffolis": 6.553
+   },
+   "c12:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -7.51,
+     7.121
+    ],
+    "character": {
+     "Nb 4d": 0.507,
+     "O 2p": 0.438,
+     "O 3p": 0.042
+    },
+    "log10_toffolis": 6.823
+   },
+   "c13:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -7.51,
+     8.418
+    ],
+    "character": {
+     "Nb 4d": 0.55,
+     "O 2p": 0.402,
+     "O 3p": 0.037
+    },
+    "log10_toffolis": 7.064
+   },
+   "c14:8": {
+    "n_electrons": 6,
+    "n_orbitals": 8,
+    "mo_indices": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "window_ev": [
+     -7.51,
+     8.842
+    ],
+    "character": {
+     "Nb 4d": 0.581,
+     "O 2p": 0.378,
+     "O 3p": 0.033
+    },
+    "log10_toffolis": 7.221
+   },
+   "c15:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -7.819,
+     6.577
+    ],
+    "character": {
+     "Nb 4d": 0.276,
+     "O 2p": 0.63,
+     "O 3p": 0.06
+    },
+    "log10_toffolis": 6.64
+   },
+   "c16:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "window_ev": [
+     -7.819,
+     7.065
+    ],
+    "character": {
+     "Nb 4d": 0.38,
+     "O 2p": 0.54,
+     "O 3p": 0.053
+    },
+    "log10_toffolis": 6.829
+   },
+   "c17:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -7.819,
+     7.121
+    ],
+    "character": {
+     "Nb 4d": 0.451,
+     "O 2p": 0.482,
+     "O 3p": 0.047
+    },
+    "log10_toffolis": 7.045
+   },
+   "c18:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -7.819,
+     8.418
+    ],
+    "character": {
+     "Nb 4d": 0.496,
+     "O 2p": 0.446,
+     "O 3p": 0.042
+    },
+    "log10_toffolis": 7.283
+   },
+   "c19:9": {
+    "n_electrons": 8,
+    "n_orbitals": 9,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "window_ev": [
+     -7.819,
+     8.842
+    ],
+    "character": {
+     "Nb 4d": 0.529,
+     "O 2p": 0.419,
+     "O 3p": 0.038
+    },
+    "log10_toffolis": 7.419
+   },
+   "c20:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -8.235,
+     6.577
+    ],
+    "character": {
+     "Nb 4d": 0.235,
+     "Nb 4f": 0.03,
+     "O 2p": 0.667,
+     "O 3p": 0.057
+    },
+    "log10_toffolis": 6.837
+   },
+   "c21:7": {
+    "n_electrons": 10,
+    "n_orbitals": 7,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "window_ev": [
+     -8.235,
+     7.065
+    ],
+    "character": {
+     "Nb 4d": 0.33,
+     "O 2p": 0.585,
+     "O 3p": 0.051
+    },
+    "log10_toffolis": 7.001
+   },
+   "c22:8": {
+    "n_electrons": 10,
+    "n_orbitals": 8,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -8.235,
+     7.121
+    ],
+    "character": {
+     "Nb 4d": 0.398,
+     "O 2p": 0.529,
+     "O 3p": 0.046
+    },
+    "log10_toffolis": 7.201
+   },
+   "c23:9": {
+    "n_electrons": 10,
+    "n_orbitals": 9,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -8.235,
+     8.418
+    ],
+    "character": {
+     "Nb 4d": 0.444,
+     "O 2p": 0.491,
+     "O 3p": 0.042
+    },
+    "log10_toffolis": 7.398
+   },
+   "c24:10": {
+    "n_electrons": 10,
+    "n_orbitals": 10,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "window_ev": [
+     -8.235,
+     8.842
+    ],
+    "character": {
+     "Nb 4d": 0.479,
+     "O 2p": 0.462,
+     "O 3p": 0.039
+    },
+    "log10_toffolis": 7.526
+   },
+   "c25:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -8.794,
+     6.577
+    ],
+    "character": {
+     "Nb 4d": 0.207,
+     "Nb 4f": 0.03,
+     "O 2p": 0.691,
+     "O 3p": 0.053
+    },
+    "log10_toffolis": 7.099
+   },
+   "c26:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "window_ev": [
+     -8.794,
+     7.065
+    ],
+    "character": {
+     "Nb 4d": 0.294,
+     "O 2p": 0.616,
+     "O 3p": 0.049
+    },
+    "log10_toffolis": 7.226
+   },
+   "c27:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -8.794,
+     7.121
+    ],
+    "character": {
+     "Nb 4d": 0.358,
+     "O 2p": 0.562,
+     "O 3p": 0.045
+    },
+    "log10_toffolis": 7.402
+   },
+   "c28:10": {
+    "n_electrons": 12,
+    "n_orbitals": 10,
+    "mo_indices": [
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -8.794,
+     8.418
+    ],
+    "character": {
+     "Nb 4d": 0.404,
+     "O 2p": 0.525,
+     "O 3p": 0.041
+    },
+    "log10_toffolis": 7.576
+   },
+   "c29:11": {
+    "n_electrons": 12,
+    "n_orbitals": 11,
+    "mo_indices": [
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31,
+     32
+    ],
+    "window_ev": [
+     -8.794,
+     8.842
+    ],
+    "character": {
+     "Nb 4d": 0.439,
+     "O 2p": 0.496,
+     "O 3p": 0.038
+    },
+    "log10_toffolis": 7.683
+   },
+   "c30:8": {
+    "n_electrons": 14,
+    "n_orbitals": 8,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -8.889,
+     6.577
+    ],
+    "character": {
+     "Nb 4d": 0.185,
+     "O 2p": 0.71,
+     "O 3p": 0.057
+    },
+    "log10_toffolis": 7.202
+   },
+   "c31:9": {
+    "n_electrons": 14,
+    "n_orbitals": 9,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29
+    ],
+    "window_ev": [
+     -8.889,
+     7.065
+    ],
+    "character": {
+     "Nb 4d": 0.265,
+     "O 2p": 0.641,
+     "O 3p": 0.052
+    },
+    "log10_toffolis": 7.342
+   },
+   "c32:10": {
+    "n_electrons": 14,
+    "n_orbitals": 10,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -8.889,
+     7.121
+    ],
+    "character": {
+     "Nb 4d": 0.326,
+     "O 2p": 0.591,
+     "O 3p": 0.049
+    },
+    "log10_toffolis": 7.47
+   },
+   "c33:11": {
+    "n_electrons": 14,
+    "n_orbitals": 11,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -8.889,
+     8.418
+    ],
+    "character": {
+     "Nb 4d": 0.37,
+     "O 2p": 0.554,
+     "O 3p": 0.045
+    },
+    "log10_toffolis": 7.638
+   }
+  }
+ },
+ "mp-1692": {
+  "material_id": "mp-1692",
+  "name": "CuO",
+  "formula": "CuO",
+  "n_atoms": 4,
+  "gap_eV": 11.538,
+  "e_scf_ha": -123.755921,
+  "ref_cas": "(18e,12o)",
+  "menu": {
+   "c0:2": {
+    "n_electrons": 2,
+    "n_orbitals": 2,
+    "mo_indices": [
+     16,
+     17
+    ],
+    "window_ev": [
+     -5.769,
+     5.769
+    ],
+    "character": {
+     "Cu 3d": 0.518,
+     "O 2p": 0.431,
+     "O 3p": 0.039
+    },
+    "log10_toffolis": 5.712
+   },
+   "c1:3": {
+    "n_electrons": 2,
+    "n_orbitals": 3,
+    "mo_indices": [
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -5.769,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.222,
+     "Cu 3d": 0.409,
+     "Cu 4d": 0.034,
+     "O 2p": 0.301
+    },
+    "log10_toffolis": 6.17
+   },
+   "c2:4": {
+    "n_electrons": 2,
+    "n_orbitals": 4,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -5.769,
+     12.563
+    ],
+    "character": {
+     "Cu 5s": 0.167,
+     "Cu 4p": 0.198,
+     "Cu 3d": 0.307,
+     "Cu 4f": 0.033,
+     "O 2s": 0.033,
+     "O 2p": 0.227
+    },
+    "log10_toffolis": 6.462
+   },
+   "c3:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -7.385,
+     5.769
+    ],
+    "character": {
+     "Cu 5s": 0.073,
+     "Cu 3d": 0.595,
+     "O 2p": 0.288
+    },
+    "log10_toffolis": 6.134
+   },
+   "c4:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -7.385,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.221,
+     "Cu 3d": 0.494,
+     "O 2p": 0.226
+    },
+    "log10_toffolis": 6.465
+   },
+   "c5:5": {
+    "n_electrons": 4,
+    "n_orbitals": 5,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -7.385,
+     12.563
+    ],
+    "character": {
+     "Cu 5s": 0.177,
+     "Cu 4p": 0.158,
+     "Cu 3d": 0.395,
+     "O 2p": 0.182
+    },
+    "log10_toffolis": 6.696
+   },
+   "c6:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -8.323,
+     5.769
+    ],
+    "character": {
+     "Cu 5s": 0.057,
+     "Cu 3d": 0.671,
+     "O 2p": 0.229
+    },
+    "log10_toffolis": 6.58
+   },
+   "c7:5": {
+    "n_electrons": 6,
+    "n_orbitals": 5,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -8.323,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.179,
+     "Cu 3d": 0.575,
+     "O 2p": 0.192
+    },
+    "log10_toffolis": 6.808
+   },
+   "c8:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -8.323,
+     12.563
+    ],
+    "character": {
+     "Cu 5s": 0.149,
+     "Cu 4p": 0.132,
+     "Cu 3d": 0.479,
+     "O 2p": 0.16
+    },
+    "log10_toffolis": 6.984
+   },
+   "c9:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -8.868,
+     5.769
+    ],
+    "character": {
+     "Cu 5s": 0.046,
+     "Cu 3d": 0.73,
+     "O 2p": 0.189
+    },
+    "log10_toffolis": 6.958
+   },
+   "c10:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -8.868,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.149,
+     "Cu 3d": 0.64,
+     "O 2p": 0.164
+    },
+    "log10_toffolis": 7.137
+   },
+   "c11:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -8.868,
+     12.563
+    ],
+    "character": {
+     "Cu 5s": 0.128,
+     "Cu 4p": 0.113,
+     "Cu 3d": 0.549,
+     "O 2p": 0.141
+    },
+    "log10_toffolis": 7.269
+   },
+   "c12:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -8.96,
+     5.769
+    ],
+    "character": {
+     "Cu 5s": 0.038,
+     "Cu 3d": 0.609,
+     "O 2p": 0.3
+    },
+    "log10_toffolis": 7.06
+   },
+   "c13:7": {
+    "n_electrons": 10,
+    "n_orbitals": 7,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -8.96,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.128,
+     "Cu 3d": 0.549,
+     "O 2p": 0.263
+    },
+    "log10_toffolis": 7.227
+   },
+   "c14:8": {
+    "n_electrons": 10,
+    "n_orbitals": 8,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -8.96,
+     12.563
+    ],
+    "character": {
+     "Cu 5s": 0.112,
+     "Cu 4p": 0.107,
+     "Cu 3d": 0.48,
+     "O 2p": 0.23
+    },
+    "log10_toffolis": 7.369
+   },
+   "c15:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -9.202,
+     5.769
+    ],
+    "character": {
+     "Cu 5s": 0.033,
+     "Cu 3d": 0.522,
+     "O 2p": 0.373,
+     "O 3p": 0.036
+    },
+    "log10_toffolis": 7.175
+   },
+   "c16:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -9.202,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.112,
+     "Cu 3d": 0.48,
+     "O 2p": 0.332,
+     "O 3p": 0.031
+    },
+    "log10_toffolis": 7.328
+   },
+   "c17:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -9.202,
+     12.563
+    ],
+    "character": {
+     "Cu 5s": 0.1,
+     "Cu 4p": 0.105,
+     "Cu 3d": 0.427,
+     "O 2p": 0.295
+    },
+    "log10_toffolis": 7.483
+   },
+   "c18:8": {
+    "n_electrons": 14,
+    "n_orbitals": 8,
+    "mo_indices": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -10.064,
+     5.769
+    ],
+    "character": {
+     "Cu 3d": 0.58,
+     "O 2p": 0.327,
+     "O 3p": 0.031
+    },
+    "log10_toffolis": 7.471
+   },
+   "c19:9": {
+    "n_electrons": 14,
+    "n_orbitals": 9,
+    "mo_indices": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -10.064,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.1,
+     "Cu 3d": 0.537,
+     "O 2p": 0.295
+    },
+    "log10_toffolis": 7.605
+   },
+   "c20:10": {
+    "n_electrons": 14,
+    "n_orbitals": 10,
+    "mo_indices": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -10.064,
+     12.563
+    ],
+    "character": {
+     "Cu 5s": 0.09,
+     "Cu 4p": 0.095,
+     "Cu 3d": 0.483,
+     "O 2p": 0.266
+    },
+    "log10_toffolis": 7.717
+   },
+   "c21:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -11.33,
+     5.769
+    ],
+    "character": {
+     "Cu 3d": 0.516,
+     "O 2p": 0.389,
+     "O 3p": 0.034
+    },
+    "log10_toffolis": 7.587
+   },
+   "c22:10": {
+    "n_electrons": 16,
+    "n_orbitals": 10,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -11.33,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.09,
+     "Cu 3d": 0.483,
+     "O 2p": 0.354,
+     "O 3p": 0.031
+    },
+    "log10_toffolis": 7.701
+   },
+   "c23:11": {
+    "n_electrons": 16,
+    "n_orbitals": 11,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -11.33,
+     12.563
+    ],
+    "character": {
+     "Cu 5s": 0.081,
+     "Cu 4p": 0.089,
+     "Cu 3d": 0.439,
+     "O 2p": 0.322
+    },
+    "log10_toffolis": 7.813
+   },
+   "c24:10": {
+    "n_electrons": 18,
+    "n_orbitals": 10,
+    "mo_indices": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -12.804,
+     5.769
+    ],
+    "character": {
+     "Cu 3d": 0.517,
+     "O 2p": 0.395,
+     "O 3p": 0.033
+    },
+    "log10_toffolis": 7.702
+   },
+   "c25:11": {
+    "n_electrons": 18,
+    "n_orbitals": 11,
+    "mo_indices": [
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18
+    ],
+    "window_ev": [
+     -12.804,
+     8.119
+    ],
+    "character": {
+     "Cu 5s": 0.081,
+     "Cu 3d": 0.488,
+     "O 2p": 0.362,
+     "O 3p": 0.03
+    },
+    "log10_toffolis": 7.8
+   }
+  }
+ },
+ "mp-18747": {
+  "material_id": "mp-18747",
+  "name": "SrMoO3",
+  "formula": "SrMoO3",
+  "n_atoms": 5,
+  "gap_eV": 10.484,
+  "e_scf_ha": -145.169137,
+  "ref_cas": "(18e,12o)",
+  "menu": {
+   "c0:2": {
+    "n_electrons": 2,
+    "n_orbitals": 2,
+    "mo_indices": [
+     20,
+     21
+    ],
+    "window_ev": [
+     -5.242,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.498,
+     "O 2p": 0.424,
+     "O 3p": 0.053
+    },
+    "log10_toffolis": 5.643
+   },
+   "c1:3": {
+    "n_electrons": 2,
+    "n_orbitals": 3,
+    "mo_indices": [
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -5.242,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.664,
+     "O 2p": 0.283,
+     "O 3p": 0.035
+    },
+    "log10_toffolis": 6.18
+   },
+   "c2:4": {
+    "n_electrons": 2,
+    "n_orbitals": 4,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -5.242,
+     8.755
+    ],
+    "character": {
+     "Mo 4d": 0.715,
+     "O 2p": 0.212
+    },
+    "log10_toffolis": 6.589
+   },
+   "c3:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -5.288,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.332,
+     "O 2p": 0.565,
+     "O 3p": 0.071
+    },
+    "log10_toffolis": 5.89
+   },
+   "c4:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -5.288,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.498,
+     "O 2p": 0.424,
+     "O 3p": 0.053
+    },
+    "log10_toffolis": 6.351
+   },
+   "c5:5": {
+    "n_electrons": 4,
+    "n_orbitals": 5,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -5.288,
+     8.755
+    ],
+    "character": {
+     "Mo 4d": 0.572,
+     "O 2p": 0.339,
+     "O 3p": 0.043
+    },
+    "log10_toffolis": 6.725
+   },
+   "c6:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -5.523,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.249,
+     "O 2p": 0.633,
+     "O 3p": 0.082
+    },
+    "log10_toffolis": 6.159
+   },
+   "c7:5": {
+    "n_electrons": 6,
+    "n_orbitals": 5,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -5.523,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.399,
+     "O 2p": 0.506,
+     "O 3p": 0.065
+    },
+    "log10_toffolis": 6.539
+   },
+   "c8:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -5.523,
+     8.755
+    ],
+    "character": {
+     "Mo 4d": 0.477,
+     "O 2p": 0.422,
+     "O 3p": 0.054
+    },
+    "log10_toffolis": 6.881
+   },
+   "c9:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -5.592,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.199,
+     "O 2p": 0.674,
+     "O 3p": 0.092
+    },
+    "log10_toffolis": 6.495
+   },
+   "c10:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -5.592,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.332,
+     "O 2p": 0.562,
+     "O 3p": 0.077
+    },
+    "log10_toffolis": 6.791
+   },
+   "c11:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -5.592,
+     8.755
+    ],
+    "character": {
+     "Mo 4d": 0.409,
+     "O 2p": 0.481,
+     "O 3p": 0.066
+    },
+    "log10_toffolis": 7.065
+   },
+   "c12:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -5.998,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.166,
+     "O 2p": 0.703,
+     "O 3p": 0.097
+    },
+    "log10_toffolis": 6.679
+   },
+   "c13:7": {
+    "n_electrons": 10,
+    "n_orbitals": 7,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -5.998,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.285,
+     "O 2p": 0.602,
+     "O 3p": 0.083
+    },
+    "log10_toffolis": 6.919
+   },
+   "c14:8": {
+    "n_electrons": 10,
+    "n_orbitals": 8,
+    "mo_indices": [
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -5.998,
+     8.755
+    ],
+    "character": {
+     "Mo 4d": 0.357,
+     "O 2p": 0.527,
+     "O 3p": 0.073
+    },
+    "log10_toffolis": 7.18
+   },
+   "c15:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -6.038,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.142,
+     "O 2p": 0.723,
+     "O 3p": 0.1
+    },
+    "log10_toffolis": 6.862
+   },
+   "c16:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -6.038,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.249,
+     "O 2p": 0.633,
+     "O 3p": 0.088
+    },
+    "log10_toffolis": 7.106
+   },
+   "c17:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -6.038,
+     8.755
+    ],
+    "character": {
+     "Mo 4d": 0.318,
+     "O 2p": 0.563,
+     "O 3p": 0.078
+    },
+    "log10_toffolis": 7.335
+   },
+   "c18:8": {
+    "n_electrons": 14,
+    "n_orbitals": 8,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -7.567,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.24,
+     "O 2p": 0.633,
+     "O 3p": 0.088
+    },
+    "log10_toffolis": 7.029
+   },
+   "c19:9": {
+    "n_electrons": 14,
+    "n_orbitals": 9,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -7.567,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.324,
+     "O 2p": 0.563,
+     "O 3p": 0.078
+    },
+    "log10_toffolis": 7.209
+   },
+   "c20:10": {
+    "n_electrons": 14,
+    "n_orbitals": 10,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -7.567,
+     8.755
+    ],
+    "character": {
+     "Mo 4d": 0.378,
+     "O 2p": 0.506,
+     "O 3p": 0.07
+    },
+    "log10_toffolis": 7.418
+   },
+   "c21:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -8.229,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.213,
+     "O 2p": 0.651,
+     "O 3p": 0.092
+    },
+    "log10_toffolis": 7.226
+   },
+   "c22:10": {
+    "n_electrons": 16,
+    "n_orbitals": 10,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -8.229,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.292,
+     "O 2p": 0.586,
+     "O 3p": 0.083
+    },
+    "log10_toffolis": 7.415
+   },
+   "c23:11": {
+    "n_electrons": 16,
+    "n_orbitals": 11,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23
+    ],
+    "window_ev": [
+     -8.229,
+     8.755
+    ],
+    "character": {
+     "Mo 4d": 0.344,
+     "O 2p": 0.533,
+     "O 3p": 0.075
+    },
+    "log10_toffolis": 7.612
+   },
+   "c24:10": {
+    "n_electrons": 18,
+    "n_orbitals": 10,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -8.337,
+     5.242
+    ],
+    "character": {
+     "Mo 4d": 0.192,
+     "O 2p": 0.665,
+     "O 3p": 0.096
+    },
+    "log10_toffolis": 7.408
+   },
+   "c25:11": {
+    "n_electrons": 18,
+    "n_orbitals": 11,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21,
+     22
+    ],
+    "window_ev": [
+     -8.337,
+     5.285
+    ],
+    "character": {
+     "Mo 4d": 0.265,
+     "O 2p": 0.604,
+     "O 3p": 0.087
+    },
+    "log10_toffolis": 7.576
+   }
+  }
+ },
+ "mp-20459": {
+  "material_id": "mp-20459",
+  "name": "PbTiO3",
+  "formula": "TiPbO3",
+  "n_atoms": 5,
+  "gap_eV": 15.677,
+  "e_scf_ha": -108.618152,
+  "ref_cas": "(14e,12o)",
+  "menu": {
+   "c0:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -7.839,
+     7.839
+    ],
+    "character": {
+     "Ti 3d": 0.351,
+     "O 2p": 0.584,
+     "O 3p": 0.068
+    },
+    "log10_toffolis": 5.945
+   },
+   "c1:5": {
+    "n_electrons": 4,
+    "n_orbitals": 5,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -7.839,
+     8.729
+    ],
+    "character": {
+     "Ti 3d": 0.551,
+     "O 2p": 0.403,
+     "O 3p": 0.047
+    },
+    "log10_toffolis": 6.741
+   },
+   "c2:6": {
+    "n_electrons": 4,
+    "n_orbitals": 6,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -7.839,
+     10.65
+    ],
+    "character": {
+     "Ti 3d": 0.594,
+     "O 2p": 0.355,
+     "O 3p": 0.045
+    },
+    "log10_toffolis": 7.051
+   },
+   "c3:7": {
+    "n_electrons": 4,
+    "n_orbitals": 7,
+    "mo_indices": [
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -7.839,
+     10.708
+    ],
+    "character": {
+     "Ti 3d": 0.635,
+     "O 2p": 0.312,
+     "O 3p": 0.039
+    },
+    "log10_toffolis": 7.324
+   },
+   "c4:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -7.999,
+     7.839
+    ],
+    "character": {
+     "Ti 3d": 0.28,
+     "O 2p": 0.642,
+     "O 3p": 0.079
+    },
+    "log10_toffolis": 6.269
+   },
+   "c5:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -7.999,
+     8.729
+    ],
+    "character": {
+     "Ti 3d": 0.47,
+     "O 2p": 0.472,
+     "O 3p": 0.057
+    },
+    "log10_toffolis": 6.899
+   },
+   "c6:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -7.999,
+     10.65
+    ],
+    "character": {
+     "Ti 3d": 0.519,
+     "O 2p": 0.421,
+     "O 3p": 0.054
+    },
+    "log10_toffolis": 7.186
+   },
+   "c7:8": {
+    "n_electrons": 6,
+    "n_orbitals": 8,
+    "mo_indices": [
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -7.999,
+     10.708
+    ],
+    "character": {
+     "Ti 3d": 0.564,
+     "O 2p": 0.375,
+     "O 3p": 0.048
+    },
+    "log10_toffolis": 7.441
+   },
+   "c8:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -8.415,
+     7.839
+    ],
+    "character": {
+     "Ti 3d": 0.249,
+     "Pb 7s": 0.031,
+     "O 2p": 0.638,
+     "O 3p": 0.076
+    },
+    "log10_toffolis": 6.484
+   },
+   "c9:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -8.415,
+     8.729
+    ],
+    "character": {
+     "Ti 3d": 0.421,
+     "O 2p": 0.494,
+     "O 3p": 0.059
+    },
+    "log10_toffolis": 7.057
+   },
+   "c10:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -8.415,
+     10.65
+    ],
+    "character": {
+     "Ti 3d": 0.47,
+     "O 2p": 0.446,
+     "O 3p": 0.055
+    },
+    "log10_toffolis": 7.294
+   },
+   "c11:9": {
+    "n_electrons": 8,
+    "n_orbitals": 9,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -8.415,
+     10.708
+    ],
+    "character": {
+     "Ti 3d": 0.516,
+     "O 2p": 0.403,
+     "O 3p": 0.05
+    },
+    "log10_toffolis": 7.541
+   },
+   "c12:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -8.55,
+     7.839
+    ],
+    "character": {
+     "Ti 3d": 0.217,
+     "O 2p": 0.668,
+     "O 3p": 0.079
+    },
+    "log10_toffolis": 6.932
+   },
+   "c13:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -8.55,
+     8.729
+    ],
+    "character": {
+     "Ti 3d": 0.358,
+     "O 2p": 0.548,
+     "O 3p": 0.065
+    },
+    "log10_toffolis": 7.37
+   },
+   "c14:10": {
+    "n_electrons": 12,
+    "n_orbitals": 10,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -8.55,
+     10.65
+    ],
+    "character": {
+     "Ti 3d": 0.403,
+     "O 2p": 0.505,
+     "O 3p": 0.062
+    },
+    "log10_toffolis": 7.537
+   },
+   "c15:11": {
+    "n_electrons": 12,
+    "n_orbitals": 11,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20,
+     21
+    ],
+    "window_ev": [
+     -8.55,
+     10.708
+    ],
+    "character": {
+     "Ti 3d": 0.447,
+     "O 2p": 0.464,
+     "O 3p": 0.057
+    },
+    "log10_toffolis": 7.729
+   },
+   "c16:8": {
+    "n_electrons": 14,
+    "n_orbitals": 8,
+    "mo_indices": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -9.241,
+     7.839
+    ],
+    "character": {
+     "Ti 3d": 0.191,
+     "Pb 7s": 0.08,
+     "O 2p": 0.643,
+     "O 3p": 0.077
+    },
+    "log10_toffolis": 7.074
+   },
+   "c17:10": {
+    "n_electrons": 14,
+    "n_orbitals": 10,
+    "mo_indices": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19
+    ],
+    "window_ev": [
+     -9.241,
+     8.729
+    ],
+    "character": {
+     "Ti 3d": 0.323,
+     "Pb 7s": 0.064,
+     "O 2p": 0.54,
+     "O 3p": 0.065
+    },
+    "log10_toffolis": 7.487
+   },
+   "c18:11": {
+    "n_electrons": 14,
+    "n_orbitals": 11,
+    "mo_indices": [
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17,
+     18,
+     19,
+     20
+    ],
+    "window_ev": [
+     -9.241,
+     10.65
+    ],
+    "character": {
+     "Ti 3d": 0.368,
+     "Pb 7s": 0.058,
+     "O 2p": 0.502,
+     "O 3p": 0.062
+    },
+    "log10_toffolis": 7.634
+   }
+  }
+ },
+ "mp-20994": {
+  "material_id": "mp-20994",
+  "name": "TaO2",
+  "formula": "TaO2",
+  "n_atoms": 6,
+  "gap_eV": 7.831,
+  "e_scf_ha": -178.667189,
+  "ref_cas": "(16e,12o)",
+  "menu": {
+   "c0:2": {
+    "n_electrons": 2,
+    "n_orbitals": 2,
+    "mo_indices": [
+     24,
+     25
+    ],
+    "window_ev": [
+     -3.916,
+     3.916
+    ],
+    "character": {
+     "Ta 5d": 0.959,
+     "O 2p": 0.077
+    },
+    "log10_toffolis": 5.736
+   },
+   "c1:3": {
+    "n_electrons": 2,
+    "n_orbitals": 3,
+    "mo_indices": [
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -3.916,
+     7.236
+    ],
+    "character": {
+     "Ta 5d": 0.998,
+     "O 2p": 0.056
+    },
+    "log10_toffolis": 6.175
+   },
+   "c2:5": {
+    "n_electrons": 2,
+    "n_orbitals": 5,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -3.916,
+     9.642
+    ],
+    "character": {
+     "Ta 5d": 1.032,
+     "O 2p": 0.035
+    },
+    "log10_toffolis": 6.77
+   },
+   "c3:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -6.937,
+     3.916
+    ],
+    "character": {
+     "Ta 5d": 0.645,
+     "O 2p": 0.352
+    },
+    "log10_toffolis": 6.004
+   },
+   "c4:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -6.937,
+     7.236
+    ],
+    "character": {
+     "Ta 5d": 0.753,
+     "O 2p": 0.268
+    },
+    "log10_toffolis": 6.351
+   },
+   "c5:6": {
+    "n_electrons": 4,
+    "n_orbitals": 6,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -6.937,
+     9.642
+    ],
+    "character": {
+     "Ta 5d": 0.863,
+     "O 2p": 0.179
+    },
+    "log10_toffolis": 6.879
+   },
+   "c6:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -7.875,
+     3.916
+    ],
+    "character": {
+     "Ta 5d": 0.387,
+     "O 2p": 0.558,
+     "O 3p": 0.043
+    },
+    "log10_toffolis": 6.396
+   },
+   "c7:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -7.875,
+     7.236
+    ],
+    "character": {
+     "Ta 5d": 0.502,
+     "O 2p": 0.467,
+     "O 3p": 0.036
+    },
+    "log10_toffolis": 6.667
+   },
+   "c8:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -7.875,
+     9.642
+    ],
+    "character": {
+     "Ta 5d": 0.647,
+     "O 2p": 0.351
+    },
+    "log10_toffolis": 7.098
+   },
+   "c9:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -8.519,
+     3.916
+    ],
+    "character": {
+     "Ta 5d": 0.323,
+     "O 2p": 0.612,
+     "O 3p": 0.046
+    },
+    "log10_toffolis": 6.492
+   },
+   "c10:7": {
+    "n_electrons": 10,
+    "n_orbitals": 7,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -8.519,
+     7.236
+    ],
+    "character": {
+     "Ta 5d": 0.43,
+     "O 2p": 0.526,
+     "O 3p": 0.039
+    },
+    "log10_toffolis": 6.746
+   },
+   "c11:9": {
+    "n_electrons": 10,
+    "n_orbitals": 9,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -8.519,
+     9.642
+    ],
+    "character": {
+     "Ta 5d": 0.575,
+     "O 2p": 0.41,
+     "O 3p": 0.031
+    },
+    "log10_toffolis": 7.221
+   },
+   "c12:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -9.358,
+     3.916
+    ],
+    "character": {
+     "Ta 5d": 0.277,
+     "Ta 5f": 0.03,
+     "O 2p": 0.648,
+     "O 3p": 0.049
+    },
+    "log10_toffolis": 6.675
+   },
+   "c13:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -9.358,
+     7.236
+    ],
+    "character": {
+     "Ta 5d": 0.376,
+     "O 2p": 0.569,
+     "O 3p": 0.043
+    },
+    "log10_toffolis": 6.886
+   },
+   "c14:10": {
+    "n_electrons": 12,
+    "n_orbitals": 10,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -9.358,
+     9.642
+    ],
+    "character": {
+     "Ta 5d": 0.518,
+     "O 2p": 0.456,
+     "O 3p": 0.035
+    },
+    "log10_toffolis": 7.347
+   },
+   "c15:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -9.975,
+     3.916
+    ],
+    "character": {
+     "Ta 5d": 0.215,
+     "O 2p": 0.686,
+     "O 3p": 0.06
+    },
+    "log10_toffolis": 7.078
+   },
+   "c16:10": {
+    "n_electrons": 16,
+    "n_orbitals": 10,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -9.975,
+     7.236
+    ],
+    "character": {
+     "Ta 5d": 0.301,
+     "O 2p": 0.619,
+     "O 3p": 0.054
+    },
+    "log10_toffolis": 7.235
+   }
+  }
+ },
+ "mp-2172": {
+  "material_id": "mp-2172",
+  "name": "AlAs",
+  "formula": "AlAs",
+  "n_atoms": 2,
+  "gap_eV": 14.694,
+  "e_scf_ha": -7.73689,
+  "ref_cas": "(8e,10o)",
+  "menu": {
+   "c0:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "window_ev": [
+     -7.347,
+     7.347
+    ],
+    "character": {
+     "Al 3p": 0.982,
+     "Al 3d": 0.086,
+     "As 5p": 0.392,
+     "As 4d": 0.103
+    },
+    "log10_toffolis": 6.708
+   },
+   "c1:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "window_ev": [
+     -7.347,
+     7.389
+    ],
+    "character": {
+     "Al 4s": 0.155,
+     "Al 3p": 0.842,
+     "Al 3d": 0.073,
+     "As 4s": 0.038,
+     "As 5p": 0.336,
+     "As 4d": 0.088
+    },
+    "log10_toffolis": 6.946
+   },
+   "c2:9": {
+    "n_electrons": 6,
+    "n_orbitals": 9,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -7.347,
+     12.833
+    ],
+    "character": {
+     "Al 4s": 0.121,
+     "Al 3p": 0.655,
+     "Al 3d": 0.166,
+     "As 5p": 0.261,
+     "As 4d": 0.182
+    },
+    "log10_toffolis": 7.343
+   },
+   "c3:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "window_ev": [
+     -19.976,
+     7.347
+    ],
+    "character": {
+     "Al 4s": 0.032,
+     "Al 3p": 0.842,
+     "Al 3d": 0.073,
+     "As 4s": 0.096,
+     "As 5p": 0.336,
+     "As 4d": 0.088
+    },
+    "log10_toffolis": 6.945
+   },
+   "c4:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "window_ev": [
+     -19.976,
+     7.389
+    ],
+    "character": {
+     "Al 4s": 0.164,
+     "Al 3p": 0.736,
+     "Al 3d": 0.064,
+     "As 4s": 0.117,
+     "As 5p": 0.294,
+     "As 4d": 0.077
+    },
+    "log10_toffolis": 7.147
+   }
+  }
+ },
+ "mp-22862": {
+  "material_id": "mp-22862",
+  "name": "NaCl",
+  "formula": "NaCl",
+  "n_atoms": 2,
+  "gap_eV": 22.889,
+  "e_scf_ha": -61.741158,
+  "ref_cas": "(6e,12o)",
+  "menu": {
+   "c0:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -11.445,
+     11.445
+    ],
+    "character": {
+     "Na 4s": 0.189,
+     "Cl 4s": 0.065,
+     "Cl 3p": 0.712,
+     "Cl 4p": 0.036
+    },
+    "log10_toffolis": 6.399
+   },
+   "c1:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "window_ev": [
+     -11.445,
+     19.723
+    ],
+    "character": {
+     "Na 4s": 0.108,
+     "Na 3p": 0.401,
+     "Cl 4s": 0.037,
+     "Cl 3p": 0.414,
+     "Cl 4p": 0.04
+    },
+    "log10_toffolis": 7.171
+   },
+   "c2:10": {
+    "n_electrons": 6,
+    "n_orbitals": 10,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "window_ev": [
+     -11.445,
+     21.85
+    ],
+    "character": {
+     "Na 4s": 0.076,
+     "Na 3p": 0.28,
+     "Cl 3p": 0.29,
+     "Cl 3d": 0.3
+    },
+    "log10_toffolis": 7.597
+   }
+  }
+ },
+ "mp-2533": {
+  "material_id": "mp-2533",
+  "name": "NbO2",
+  "formula": "NbO2",
+  "n_atoms": 6,
+  "gap_eV": 8.095,
+  "e_scf_ha": -176.377242,
+  "ref_cas": "(16e,12o)",
+  "menu": {
+   "c0:2": {
+    "n_electrons": 2,
+    "n_orbitals": 2,
+    "mo_indices": [
+     24,
+     25
+    ],
+    "window_ev": [
+     -4.047,
+     4.047
+    ],
+    "character": {
+     "Nb 4d": 0.943,
+     "O 2p": 0.081
+    },
+    "log10_toffolis": 5.714
+   },
+   "c1:3": {
+    "n_electrons": 2,
+    "n_orbitals": 3,
+    "mo_indices": [
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -4.047,
+     6.717
+    ],
+    "character": {
+     "Nb 4d": 0.977,
+     "O 2p": 0.06
+    },
+    "log10_toffolis": 6.166
+   },
+   "c2:5": {
+    "n_electrons": 2,
+    "n_orbitals": 5,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -4.047,
+     8.741
+    ],
+    "character": {
+     "Nb 4d": 1.008,
+     "O 2p": 0.038
+    },
+    "log10_toffolis": 6.767
+   },
+   "c3:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -6.498,
+     4.047
+    ],
+    "character": {
+     "Nb 4d": 0.636,
+     "O 2p": 0.354
+    },
+    "log10_toffolis": 5.984
+   },
+   "c4:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -6.498,
+     6.717
+    ],
+    "character": {
+     "Nb 4d": 0.738,
+     "O 2p": 0.27
+    },
+    "log10_toffolis": 6.338
+   },
+   "c5:6": {
+    "n_electrons": 4,
+    "n_orbitals": 6,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -6.498,
+     8.741
+    ],
+    "character": {
+     "Nb 4d": 0.843,
+     "O 2p": 0.181
+    },
+    "log10_toffolis": 6.875
+   },
+   "c6:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -7.356,
+     4.047
+    ],
+    "character": {
+     "Nb 4d": 0.382,
+     "O 2p": 0.56,
+     "O 3p": 0.043
+    },
+    "log10_toffolis": 6.386
+   },
+   "c7:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -7.356,
+     6.717
+    ],
+    "character": {
+     "Nb 4d": 0.492,
+     "O 2p": 0.47,
+     "O 3p": 0.036
+    },
+    "log10_toffolis": 6.659
+   },
+   "c8:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -7.356,
+     8.741
+    ],
+    "character": {
+     "Nb 4d": 0.632,
+     "O 2p": 0.353
+    },
+    "log10_toffolis": 7.09
+   },
+   "c9:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -7.909,
+     4.047
+    ],
+    "character": {
+     "Nb 4d": 0.318,
+     "O 2p": 0.613,
+     "O 3p": 0.046
+    },
+    "log10_toffolis": 6.475
+   },
+   "c10:7": {
+    "n_electrons": 10,
+    "n_orbitals": 7,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -7.909,
+     6.717
+    ],
+    "character": {
+     "Nb 4d": 0.422,
+     "O 2p": 0.528,
+     "O 3p": 0.04
+    },
+    "log10_toffolis": 6.739
+   },
+   "c11:9": {
+    "n_electrons": 10,
+    "n_orbitals": 9,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -7.909,
+     8.741
+    ],
+    "character": {
+     "Nb 4d": 0.562,
+     "O 2p": 0.412,
+     "O 3p": 0.032
+    },
+    "log10_toffolis": 7.222
+   },
+   "c12:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -8.749,
+     4.047
+    ],
+    "character": {
+     "Nb 4d": 0.273,
+     "Nb 4f": 0.03,
+     "O 2p": 0.649,
+     "O 3p": 0.049
+    },
+    "log10_toffolis": 6.663
+   },
+   "c13:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -8.749,
+     6.717
+    ],
+    "character": {
+     "Nb 4d": 0.369,
+     "O 2p": 0.57,
+     "O 3p": 0.043
+    },
+    "log10_toffolis": 6.883
+   },
+   "c14:10": {
+    "n_electrons": 12,
+    "n_orbitals": 10,
+    "mo_indices": [
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28
+    ],
+    "window_ev": [
+     -8.749,
+     8.741
+    ],
+    "character": {
+     "Nb 4d": 0.506,
+     "O 2p": 0.457,
+     "O 3p": 0.035
+    },
+    "log10_toffolis": 7.358
+   },
+   "c15:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25
+    ],
+    "window_ev": [
+     -9.321,
+     4.047
+    ],
+    "character": {
+     "Nb 4d": 0.212,
+     "O 2p": 0.688,
+     "O 3p": 0.058
+    },
+    "log10_toffolis": 7.073
+   },
+   "c16:10": {
+    "n_electrons": 16,
+    "n_orbitals": 10,
+    "mo_indices": [
+     17,
+     18,
+     19,
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26
+    ],
+    "window_ev": [
+     -9.321,
+     6.717
+    ],
+    "character": {
+     "Nb 4d": 0.295,
+     "O 2p": 0.621,
+     "O 3p": 0.052
+    },
+    "log10_toffolis": 7.232
+   }
+  }
+ },
+ "mp-2605": {
+  "material_id": "mp-2605",
+  "name": "CaO",
+  "formula": "CaO",
+  "n_atoms": 2,
+  "gap_eV": 17.641,
+  "e_scf_ha": -52.212431,
+  "ref_cas": "(8e,10o)",
+  "menu": {
+   "c0:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -8.82,
+     8.82
+    ],
+    "character": {
+     "Ca 3d": 0.492,
+     "O 2p": 0.415,
+     "O 3p": 0.082
+    },
+    "log10_toffolis": 7.022
+   },
+   "c1:9": {
+    "n_electrons": 6,
+    "n_orbitals": 9,
+    "mo_indices": [
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "window_ev": [
+     -8.82,
+     10.821
+    ],
+    "character": {
+     "Ca 5s": 0.078,
+     "Ca 3d": 0.547,
+     "O 2p": 0.277,
+     "O 3p": 0.055
+    },
+    "log10_toffolis": 7.544
+   },
+   "c2:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -28.39,
+     8.82
+    ],
+    "character": {
+     "Ca 3d": 0.422,
+     "O 2s": 0.127,
+     "O 2p": 0.356,
+     "O 3p": 0.07
+    },
+    "log10_toffolis": 7.27
+   }
+  }
+ },
+ "mp-2691": {
+  "material_id": "mp-2691",
+  "name": "CdSe",
+  "formula": "CdSe",
+  "n_atoms": 2,
+  "gap_eV": 12.404,
+  "e_scf_ha": -53.441542,
+  "ref_cas": "(16e,12o)",
+  "menu": {
+   "c0:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -6.202,
+     6.202
+    ],
+    "character": {
+     "Cd 6s": 0.193,
+     "Cd 6p": 0.033,
+     "Cd 4d": 0.046,
+     "Se 4p": 0.591,
+     "Se 5p": 0.073
+    },
+    "log10_toffolis": 6.014
+   },
+   "c1:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -6.202,
+     9.043
+    ],
+    "character": {
+     "Cd 6s": 0.11,
+     "Cd 6p": 0.455,
+     "Se 4p": 0.349,
+     "Se 5p": 0.054,
+     "Se 4d": 0.085
+    },
+    "log10_toffolis": 6.917
+   },
+   "c2:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -15.358,
+     6.202
+    ],
+    "character": {
+     "Cd 6s": 0.129,
+     "Cd 4d": 0.38,
+     "Se 4p": 0.394,
+     "Se 5p": 0.048
+    },
+    "log10_toffolis": 6.691
+   },
+   "c3:9": {
+    "n_electrons": 10,
+    "n_orbitals": 9,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -15.358,
+     9.043
+    ],
+    "character": {
+     "Cd 6s": 0.086,
+     "Cd 6p": 0.354,
+     "Cd 4d": 0.254,
+     "Se 4p": 0.271,
+     "Se 5p": 0.042,
+     "Se 4d": 0.067
+    },
+    "log10_toffolis": 7.263
+   },
+   "c4:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -15.961,
+     6.202
+    ],
+    "character": {
+     "Cd 6s": 0.086,
+     "Cd 4d": 0.586,
+     "Se 4p": 0.281,
+     "Se 5p": 0.038
+    },
+    "log10_toffolis": 7.549
+   }
+  }
+ },
+ "mp-35925": {
+  "material_id": "mp-35925",
+  "name": "NiO2",
+  "formula": "NiO2",
+  "n_atoms": 3,
+  "gap_eV": 14.163,
+  "e_scf_ha": -199.482499,
+  "ref_cas": "(18e,12o)",
+  "menu": {
+   "c0:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     13,
+     14,
+     15
+    ],
+    "window_ev": [
+     -7.083,
+     7.081
+    ],
+    "character": {
+     "Ni 3d": 0.232,
+     "O 2p": 0.703,
+     "O 3p": 0.05
+    },
+    "log10_toffolis": 6.135
+   },
+   "c1:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16
+    ],
+    "window_ev": [
+     -7.083,
+     7.085
+    ],
+    "character": {
+     "Ni 3d": 0.296,
+     "O 2p": 0.649,
+     "O 3p": 0.048
+    },
+    "log10_toffolis": 6.554
+   },
+   "c2:5": {
+    "n_electrons": 4,
+    "n_orbitals": 5,
+    "mo_indices": [
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -7.083,
+     18.073
+    ],
+    "character": {
+     "Ni 5s": 0.074,
+     "Ni 3d": 0.237,
+     "O 3s": 0.117,
+     "O 2p": 0.521,
+     "O 3p": 0.036
+    },
+    "log10_toffolis": 6.816
+   },
+   "c3:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15
+    ],
+    "window_ev": [
+     -8.116,
+     7.081
+    ],
+    "character": {
+     "Ni 3d": 0.174,
+     "O 2p": 0.76,
+     "O 3p": 0.058
+    },
+    "log10_toffolis": 6.489
+   },
+   "c4:5": {
+    "n_electrons": 6,
+    "n_orbitals": 5,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "window_ev": [
+     -8.116,
+     7.085
+    ],
+    "character": {
+     "Ni 3d": 0.237,
+     "O 2p": 0.705,
+     "O 3p": 0.055
+    },
+    "log10_toffolis": 6.774
+   },
+   "c5:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -8.116,
+     18.073
+    ],
+    "character": {
+     "Ni 5s": 0.061,
+     "Ni 3d": 0.197,
+     "O 3s": 0.095,
+     "O 2p": 0.589,
+     "O 3p": 0.043
+    },
+    "log10_toffolis": 7.017
+   },
+   "c6:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "window_ev": [
+     -10.108,
+     7.081
+    ],
+    "character": {
+     "Ni 3d": 0.179,
+     "O 2p": 0.74,
+     "O 3p": 0.058
+    },
+    "log10_toffolis": 6.845
+   },
+   "c7:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "window_ev": [
+     -10.108,
+     7.085
+    ],
+    "character": {
+     "Ni 3d": 0.23,
+     "O 2p": 0.697,
+     "O 3p": 0.056
+    },
+    "log10_toffolis": 7.032
+   },
+   "c8:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -10.108,
+     18.073
+    ],
+    "character": {
+     "Ni 5s": 0.054,
+     "Ni 3d": 0.197,
+     "O 3s": 0.081,
+     "O 2p": 0.599,
+     "O 3p": 0.046
+    },
+    "log10_toffolis": 7.194
+   },
+   "c9:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "window_ev": [
+     -13.452,
+     7.081
+    ],
+    "character": {
+     "Ni 3d": 0.271,
+     "O 2p": 0.667,
+     "O 3p": 0.046
+    },
+    "log10_toffolis": 7.44
+   },
+   "c10:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "window_ev": [
+     -13.452,
+     7.085
+    ],
+    "character": {
+     "Ni 3d": 0.298,
+     "O 2p": 0.645,
+     "O 3p": 0.045
+    },
+    "log10_toffolis": 7.544
+   },
+   "c11:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -13.452,
+     18.073
+    ],
+    "character": {
+     "Ni 5s": 0.042,
+     "Ni 3d": 0.265,
+     "O 3s": 0.063,
+     "O 2p": 0.574,
+     "O 3p": 0.039
+    },
+    "log10_toffolis": 7.626
+   },
+   "c12:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "window_ev": [
+     -16.486,
+     7.081
+    ],
+    "character": {
+     "Ni 3d": 0.416,
+     "O 2p": 0.529,
+     "O 3p": 0.036
+    },
+    "log10_toffolis": 7.891
+   },
+   "c13:10": {
+    "n_electrons": 16,
+    "n_orbitals": 10,
+    "mo_indices": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "window_ev": [
+     -16.486,
+     7.085
+    ],
+    "character": {
+     "Ni 3d": 0.423,
+     "O 2p": 0.524,
+     "O 3p": 0.036
+    },
+    "log10_toffolis": 7.959
+   },
+   "c14:11": {
+    "n_electrons": 16,
+    "n_orbitals": 11,
+    "mo_indices": [
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -16.486,
+     18.073
+    ],
+    "character": {
+     "Ni 5s": 0.035,
+     "Ni 3d": 0.385,
+     "O 3s": 0.052,
+     "O 2p": 0.478,
+     "O 3p": 0.032
+    },
+    "log10_toffolis": 8.012
+   },
+   "c15:10": {
+    "n_electrons": 18,
+    "n_orbitals": 10,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15
+    ],
+    "window_ev": [
+     -16.736,
+     7.081
+    ],
+    "character": {
+     "Ni 3d": 0.451,
+     "O 2p": 0.495,
+     "O 3p": 0.032
+    },
+    "log10_toffolis": 8.059
+   },
+   "c16:11": {
+    "n_electrons": 18,
+    "n_orbitals": 11,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16
+    ],
+    "window_ev": [
+     -16.736,
+     7.085
+    ],
+    "character": {
+     "Ni 3d": 0.454,
+     "O 2p": 0.494,
+     "O 3p": 0.033
+    },
+    "log10_toffolis": 8.118
+   }
+  }
+ },
+ "mp-4596": {
+  "material_id": "mp-4596",
+  "name": "Sr2RuO4",
+  "formula": "Sr2RuO4",
+  "n_atoms": 7,
+  "gap_eV": 9.535,
+  "e_scf_ha": -217.842908,
+  "ref_cas": "(20e,12o)",
+  "menu": {
+   "c0:2": {
+    "n_electrons": 2,
+    "n_orbitals": 2,
+    "mo_indices": [
+     29,
+     30
+    ],
+    "window_ev": [
+     -4.768,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.394,
+     "O 2p": 0.501,
+     "O 3p": 0.058
+    },
+    "log10_toffolis": 5.654
+   },
+   "c1:3": {
+    "n_electrons": 2,
+    "n_orbitals": 3,
+    "mo_indices": [
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -4.768,
+     8.711
+    ],
+    "character": {
+     "Sr 4d": 0.032,
+     "Ru 4d": 0.5,
+     "O 2p": 0.384,
+     "O 3p": 0.054
+    },
+    "log10_toffolis": 6.234
+   },
+   "c2:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -5.367,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.263,
+     "O 2p": 0.62,
+     "O 3p": 0.073
+    },
+    "log10_toffolis": 5.916
+   },
+   "c3:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -5.367,
+     8.711
+    ],
+    "character": {
+     "Ru 4d": 0.375,
+     "O 2p": 0.503,
+     "O 3p": 0.066
+    },
+    "log10_toffolis": 6.418
+   },
+   "c4:4": {
+    "n_electrons": 6,
+    "n_orbitals": 4,
+    "mo_indices": [
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -5.712,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.197,
+     "O 2p": 0.677,
+     "O 3p": 0.076
+    },
+    "log10_toffolis": 6.081
+   },
+   "c5:5": {
+    "n_electrons": 6,
+    "n_orbitals": 5,
+    "mo_indices": [
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -5.712,
+     8.711
+    ],
+    "character": {
+     "Ru 4d": 0.3,
+     "O 2p": 0.572,
+     "O 3p": 0.07
+    },
+    "log10_toffolis": 6.558
+   },
+   "c6:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -5.831,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.158,
+     "O 2p": 0.71,
+     "O 3p": 0.082
+    },
+    "log10_toffolis": 6.353
+   },
+   "c7:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -5.831,
+     8.711
+    ],
+    "character": {
+     "Ru 4d": 0.25,
+     "O 2p": 0.617,
+     "O 3p": 0.076
+    },
+    "log10_toffolis": 6.734
+   },
+   "c8:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -5.863,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.165,
+     "O 2p": 0.703,
+     "O 3p": 0.083
+    },
+    "log10_toffolis": 6.493
+   },
+   "c9:7": {
+    "n_electrons": 10,
+    "n_orbitals": 7,
+    "mo_indices": [
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -5.863,
+     8.711
+    ],
+    "character": {
+     "Ru 4d": 0.243,
+     "O 2p": 0.624,
+     "O 3p": 0.078
+    },
+    "log10_toffolis": 6.87
+   },
+   "c10:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -5.983,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.141,
+     "O 2p": 0.716,
+     "O 3p": 0.089
+    },
+    "log10_toffolis": 6.79
+   },
+   "c11:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -5.983,
+     8.711
+    ],
+    "character": {
+     "Ru 4d": 0.212,
+     "O 2p": 0.645,
+     "O 3p": 0.083
+    },
+    "log10_toffolis": 7.072
+   },
+   "c12:8": {
+    "n_electrons": 14,
+    "n_orbitals": 8,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -6.424,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.124,
+     "O 2p": 0.735,
+     "O 3p": 0.092
+    },
+    "log10_toffolis": 6.985
+   },
+   "c13:9": {
+    "n_electrons": 14,
+    "n_orbitals": 9,
+    "mo_indices": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -6.424,
+     8.711
+    ],
+    "character": {
+     "Ru 4d": 0.189,
+     "O 2p": 0.671,
+     "O 3p": 0.086
+    },
+    "log10_toffolis": 7.232
+   },
+   "c14:9": {
+    "n_electrons": 16,
+    "n_orbitals": 9,
+    "mo_indices": [
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -6.898,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.132,
+     "O 2p": 0.728,
+     "O 3p": 0.093
+    },
+    "log10_toffolis": 7.166
+   },
+   "c15:10": {
+    "n_electrons": 16,
+    "n_orbitals": 10,
+    "mo_indices": [
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -6.898,
+     8.711
+    ],
+    "character": {
+     "Ru 4d": 0.19,
+     "O 2p": 0.67,
+     "O 3p": 0.089
+    },
+    "log10_toffolis": 7.374
+   },
+   "c16:10": {
+    "n_electrons": 18,
+    "n_orbitals": 10,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -7.844,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.119,
+     "O 2p": 0.734,
+     "O 3p": 0.1
+    },
+    "log10_toffolis": 7.346
+   },
+   "c17:11": {
+    "n_electrons": 18,
+    "n_orbitals": 11,
+    "mo_indices": [
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     31
+    ],
+    "window_ev": [
+     -7.844,
+     8.711
+    ],
+    "character": {
+     "Ru 4d": 0.173,
+     "O 2p": 0.681,
+     "O 3p": 0.095
+    },
+    "log10_toffolis": 7.527
+   },
+   "c18:11": {
+    "n_electrons": 20,
+    "n_orbitals": 11,
+    "mo_indices": [
+     20,
+     21,
+     22,
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30
+    ],
+    "window_ev": [
+     -8.513,
+     4.768
+    ],
+    "character": {
+     "Ru 4d": 0.144,
+     "O 2p": 0.71,
+     "O 3p": 0.097
+    },
+    "log10_toffolis": 7.521
+   }
+  }
+ },
+ "mp-550893": {
+  "material_id": "mp-550893",
+  "name": "HfO2",
+  "formula": "HfO2",
+  "n_atoms": 3,
+  "gap_eV": 18.25,
+  "e_scf_ha": -80.918452,
+  "ref_cas": "(12e,12o)",
+  "menu": {
+   "c0:5": {
+    "n_electrons": 6,
+    "n_orbitals": 5,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "window_ev": [
+     -9.125,
+     9.125
+    ],
+    "character": {
+     "Hf 5d": 0.385,
+     "O 2p": 0.524,
+     "O 3p": 0.051
+    },
+    "log10_toffolis": 6.605
+   },
+   "c1:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "window_ev": [
+     -9.125,
+     14.827
+    ],
+    "character": {
+     "Hf 6s": 0.074,
+     "Hf 7s": 0.06,
+     "Hf 5d": 0.321,
+     "O 2p": 0.437,
+     "O 3p": 0.042
+    },
+    "log10_toffolis": 6.852
+   },
+   "c2:9": {
+    "n_electrons": 6,
+    "n_orbitals": 9,
+    "mo_indices": [
+     9,
+     10,
+     11,
+     12,
+     13,
+     14,
+     15,
+     16,
+     17
+    ],
+    "window_ev": [
+     -9.125,
+     16.863
+    ],
+    "character": {
+     "Hf 6s": 0.049,
+     "Hf 7s": 0.04,
+     "Hf 5d": 0.473,
+     "O 2p": 0.374
+    },
+    "log10_toffolis": 7.485
+   },
+   "c3:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "window_ev": [
+     -14.72,
+     9.125
+    ],
+    "character": {
+     "Hf 5d": 0.341,
+     "O 2p": 0.586,
+     "O 3p": 0.047
+    },
+    "log10_toffolis": 7.193
+   },
+   "c4:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13,
+     14
+    ],
+    "window_ev": [
+     -14.72,
+     14.827
+    ],
+    "character": {
+     "Hf 6s": 0.049,
+     "Hf 7s": 0.04,
+     "Hf 5d": 0.303,
+     "O 2p": 0.521,
+     "O 3p": 0.042
+    },
+    "log10_toffolis": 7.359
+   }
+  }
+ },
+ "mp-569304": {
+  "material_id": "mp-569304",
+  "name": "C",
+  "formula": "C",
+  "n_atoms": 4,
+  "gap_eV": 20.508,
+  "e_scf_ha": -21.817363,
+  "ref_cas": "(12e,12o)",
+  "menu": {
+   "c0:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -10.254,
+     10.254
+    ],
+    "character": {
+     "C 2p": 0.626,
+     "C 3d": 0.355
+    },
+    "log10_toffolis": 6.211
+   },
+   "c1:5": {
+    "n_electrons": 4,
+    "n_orbitals": 5,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -10.254,
+     17.588
+    ],
+    "character": {
+     "C 2p": 0.717,
+     "C 3d": 0.272
+    },
+    "log10_toffolis": 6.755
+   },
+   "c2:7": {
+    "n_electrons": 4,
+    "n_orbitals": 7,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -10.254,
+     17.621
+    ],
+    "character": {
+     "C 2p": 0.757,
+     "C 3d": 0.236
+    },
+    "log10_toffolis": 7.406
+   },
+   "c3:8": {
+    "n_electrons": 4,
+    "n_orbitals": 8,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "window_ev": [
+     -10.254,
+     18.32
+    ],
+    "character": {
+     "C 2p": 0.661,
+     "C 3d": 0.304
+    },
+    "log10_toffolis": 7.592
+   },
+   "c4:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -10.265,
+     10.254
+    ],
+    "character": {
+     "C 2p": 0.751,
+     "C 3d": 0.239
+    },
+    "log10_toffolis": 7.028
+   },
+   "c5:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -10.265,
+     17.588
+    ],
+    "character": {
+     "C 2p": 0.78,
+     "C 3d": 0.212
+    },
+    "log10_toffolis": 7.232
+   },
+   "c6:9": {
+    "n_electrons": 8,
+    "n_orbitals": 9,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -10.265,
+     17.621
+    ],
+    "character": {
+     "C 2p": 0.797,
+     "C 3d": 0.198
+    },
+    "log10_toffolis": 7.764
+   },
+   "c7:10": {
+    "n_electrons": 8,
+    "n_orbitals": 10,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "window_ev": [
+     -10.265,
+     18.32
+    ],
+    "character": {
+     "C 2p": 0.717,
+     "C 3d": 0.256
+    },
+    "log10_toffolis": 7.925
+   },
+   "c8:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -10.979,
+     10.254
+    ],
+    "character": {
+     "C 2p": 0.787,
+     "C 3d": 0.198
+    },
+    "log10_toffolis": 7.28
+   },
+   "c9:8": {
+    "n_electrons": 10,
+    "n_orbitals": 8,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -10.979,
+     17.588
+    ],
+    "character": {
+     "C 2p": 0.804,
+     "C 3d": 0.185
+    },
+    "log10_toffolis": 7.429
+   },
+   "c10:10": {
+    "n_electrons": 10,
+    "n_orbitals": 10,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -10.979,
+     17.621
+    ],
+    "character": {
+     "C 2p": 0.814,
+     "C 3d": 0.177
+    },
+    "log10_toffolis": 7.849
+   },
+   "c11:11": {
+    "n_electrons": 10,
+    "n_orbitals": 11,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12,
+     13
+    ],
+    "window_ev": [
+     -10.979,
+     18.32
+    ],
+    "character": {
+     "C 2p": 0.74,
+     "C 3d": 0.232
+    },
+    "log10_toffolis": 7.979
+   },
+   "c12:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -12.797,
+     10.254
+    ],
+    "character": {
+     "C 2p": 0.819,
+     "C 3d": 0.169
+    },
+    "log10_toffolis": 7.501
+   },
+   "c13:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -12.797,
+     17.588
+    ],
+    "character": {
+     "C 2p": 0.827,
+     "C 3d": 0.164
+    },
+    "log10_toffolis": 7.65
+   },
+   "c14:11": {
+    "n_electrons": 12,
+    "n_orbitals": 11,
+    "mo_indices": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -12.797,
+     17.621
+    ],
+    "character": {
+     "C 2p": 0.833,
+     "C 3d": 0.161
+    },
+    "log10_toffolis": 7.978
+   }
+  }
+ },
+ "mp-8062": {
+  "material_id": "mp-8062",
+  "name": "SiC",
+  "formula": "SiC",
+  "n_atoms": 2,
+  "gap_eV": 19.845,
+  "e_scf_ha": -8.890998,
+  "ref_cas": "(8e,10o)",
+  "menu": {
+   "c0:6": {
+    "n_electrons": 6,
+    "n_orbitals": 6,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "window_ev": [
+     -9.923,
+     9.923
+    ],
+    "character": {
+     "Si 3p": 0.623,
+     "Si 3d": 0.12,
+     "C 2p": 0.337,
+     "C 3p": 0.046,
+     "C 3d": 0.039
+    },
+    "log10_toffolis": 6.855
+   },
+   "c1:7": {
+    "n_electrons": 6,
+    "n_orbitals": 7,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "window_ev": [
+     -9.923,
+     13.633
+    ],
+    "character": {
+     "Si 3s": 0.067,
+     "Si 3p": 0.534,
+     "Si 3d": 0.102,
+     "C 2s": 0.072,
+     "C 2p": 0.289,
+     "C 3p": 0.039,
+     "C 3d": 0.033
+    },
+    "log10_toffolis": 7.097
+   },
+   "c2:9": {
+    "n_electrons": 6,
+    "n_orbitals": 9,
+    "mo_indices": [
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -9.923,
+     18.903
+    ],
+    "character": {
+     "Si 3s": 0.052,
+     "Si 3p": 0.415,
+     "Si 3d": 0.261,
+     "C 2s": 0.056,
+     "C 2p": 0.225,
+     "C 3p": 0.03,
+     "C 3d": 0.067
+    },
+    "log10_toffolis": 7.5
+   },
+   "c3:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6
+    ],
+    "window_ev": [
+     -27.783,
+     9.923
+    ],
+    "character": {
+     "Si 3s": 0.083,
+     "Si 3p": 0.534,
+     "Si 3d": 0.102,
+     "C 2s": 0.059,
+     "C 2p": 0.289,
+     "C 3p": 0.039,
+     "C 3d": 0.033
+    },
+    "log10_toffolis": 7.059
+   },
+   "c4:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     0,
+     1,
+     2,
+     3,
+     4,
+     5,
+     6,
+     7
+    ],
+    "window_ev": [
+     -27.783,
+     13.633
+    ],
+    "character": {
+     "Si 3s": 0.131,
+     "Si 3p": 0.467,
+     "Si 3d": 0.09,
+     "C 2s": 0.115,
+     "C 2p": 0.253,
+     "C 3p": 0.034
+    },
+    "log10_toffolis": 7.288
+   }
+  }
+ },
+ "mp-984": {
+  "material_id": "mp-984",
+  "name": "BN",
+  "formula": "BN",
+  "n_atoms": 4,
+  "gap_eV": 18.611,
+  "e_scf_ha": -24.911446,
+  "ref_cas": "(12e,11o)",
+  "menu": {
+   "c0:3": {
+    "n_electrons": 4,
+    "n_orbitals": 3,
+    "mo_indices": [
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -9.305,
+     9.305
+    ],
+    "character": {
+     "B 2s": 0.078,
+     "B 3s": 0.094,
+     "B 2p": 0.12,
+     "B 3p": 0.032,
+     "B 3d": 0.179,
+     "N 2p": 0.466
+    },
+    "log10_toffolis": 6.081
+   },
+   "c1:4": {
+    "n_electrons": 4,
+    "n_orbitals": 4,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -9.305,
+     13.336
+    ],
+    "character": {
+     "B 2s": 0.059,
+     "B 3s": 0.071,
+     "B 2p": 0.161,
+     "B 3p": 0.395,
+     "B 3d": 0.134,
+     "N 2p": 0.373
+    },
+    "log10_toffolis": 6.367
+   },
+   "c2:5": {
+    "n_electrons": 4,
+    "n_orbitals": 5,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -9.305,
+     18.361
+    ],
+    "character": {
+     "B 2s": 0.216,
+     "B 3s": 0.087,
+     "B 2p": 0.129,
+     "B 3p": 0.316,
+     "B 3d": 0.132,
+     "N 2s": 0.054,
+     "N 2p": 0.299
+    },
+    "log10_toffolis": 6.594
+   },
+   "c3:6": {
+    "n_electrons": 4,
+    "n_orbitals": 6,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "window_ev": [
+     -9.305,
+     19.903
+    ],
+    "character": {
+     "B 2s": 0.18,
+     "B 3s": 0.073,
+     "B 2p": 0.349,
+     "B 3p": 0.138,
+     "B 3d": 0.118,
+     "N 2s": 0.045,
+     "N 2p": 0.269
+    },
+    "log10_toffolis": 6.818
+   },
+   "c4:7": {
+    "n_electrons": 4,
+    "n_orbitals": 7,
+    "mo_indices": [
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -9.305,
+     19.92
+    ],
+    "character": {
+     "B 2s": 0.154,
+     "B 3s": 0.062,
+     "B 2p": 0.503,
+     "B 3d": 0.108,
+     "N 2s": 0.038,
+     "N 2p": 0.248
+    },
+    "log10_toffolis": 7.011
+   },
+   "c5:5": {
+    "n_electrons": 8,
+    "n_orbitals": 5,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -9.312,
+     9.305
+    ],
+    "character": {
+     "B 2s": 0.047,
+     "B 3s": 0.057,
+     "B 2p": 0.142,
+     "B 3p": 0.041,
+     "B 3d": 0.134,
+     "N 2p": 0.56
+    },
+    "log10_toffolis": 6.818
+   },
+   "c6:6": {
+    "n_electrons": 8,
+    "n_orbitals": 6,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -9.312,
+     13.336
+    ],
+    "character": {
+     "B 2s": 0.039,
+     "B 3s": 0.047,
+     "B 2p": 0.165,
+     "B 3p": 0.281,
+     "B 3d": 0.112,
+     "N 2p": 0.482
+    },
+    "log10_toffolis": 6.961
+   },
+   "c7:7": {
+    "n_electrons": 8,
+    "n_orbitals": 7,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -9.312,
+     18.361
+    ],
+    "character": {
+     "B 2s": 0.154,
+     "B 3s": 0.062,
+     "B 2p": 0.142,
+     "B 3p": 0.241,
+     "B 3d": 0.113,
+     "N 2s": 0.038,
+     "N 2p": 0.413
+    },
+    "log10_toffolis": 7.174
+   },
+   "c8:8": {
+    "n_electrons": 8,
+    "n_orbitals": 8,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "window_ev": [
+     -9.312,
+     19.903
+    ],
+    "character": {
+     "B 2s": 0.135,
+     "B 3s": 0.055,
+     "B 2p": 0.305,
+     "B 3p": 0.117,
+     "B 3d": 0.105,
+     "N 2s": 0.033,
+     "N 2p": 0.377
+    },
+    "log10_toffolis": 7.304
+   },
+   "c9:9": {
+    "n_electrons": 8,
+    "n_orbitals": 9,
+    "mo_indices": [
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -9.312,
+     19.92
+    ],
+    "character": {
+     "B 2s": 0.12,
+     "B 3s": 0.049,
+     "B 2p": 0.43,
+     "B 3d": 0.099,
+     "N 2s": 0.03,
+     "N 2p": 0.349
+    },
+    "log10_toffolis": 7.435
+   },
+   "c10:6": {
+    "n_electrons": 10,
+    "n_orbitals": 6,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -9.923,
+     9.305
+    ],
+    "character": {
+     "B 2s": 0.039,
+     "B 3s": 0.047,
+     "B 2p": 0.169,
+     "B 3d": 0.112,
+     "N 2p": 0.554,
+     "N 3p": 0.032
+    },
+    "log10_toffolis": 6.958
+   },
+   "c11:7": {
+    "n_electrons": 10,
+    "n_orbitals": 7,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -9.923,
+     13.336
+    ],
+    "character": {
+     "B 2s": 0.034,
+     "B 3s": 0.04,
+     "B 2p": 0.186,
+     "B 3p": 0.235,
+     "B 3d": 0.096,
+     "N 2p": 0.488
+    },
+    "log10_toffolis": 7.147
+   },
+   "c12:8": {
+    "n_electrons": 10,
+    "n_orbitals": 8,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -9.923,
+     18.361
+    ],
+    "character": {
+     "B 2s": 0.135,
+     "B 3s": 0.055,
+     "B 2p": 0.162,
+     "B 3p": 0.206,
+     "B 3d": 0.099,
+     "N 2s": 0.033,
+     "N 2p": 0.427
+    },
+    "log10_toffolis": 7.345
+   },
+   "c13:9": {
+    "n_electrons": 10,
+    "n_orbitals": 9,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "window_ev": [
+     -9.923,
+     19.903
+    ],
+    "character": {
+     "B 2s": 0.12,
+     "B 3s": 0.049,
+     "B 2p": 0.306,
+     "B 3p": 0.1,
+     "B 3d": 0.093,
+     "N 2s": 0.03,
+     "N 2p": 0.393
+    },
+    "log10_toffolis": 7.465
+   },
+   "c14:10": {
+    "n_electrons": 10,
+    "n_orbitals": 10,
+    "mo_indices": [
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11,
+     12
+    ],
+    "window_ev": [
+     -9.923,
+     19.92
+    ],
+    "character": {
+     "B 2s": 0.108,
+     "B 3s": 0.044,
+     "B 2p": 0.418,
+     "B 3d": 0.089,
+     "N 2p": 0.366
+    },
+    "log10_toffolis": 7.569
+   },
+   "c15:7": {
+    "n_electrons": 12,
+    "n_orbitals": 7,
+    "mo_indices": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8
+    ],
+    "window_ev": [
+     -11.073,
+     9.305
+    ],
+    "character": {
+     "B 2s": 0.034,
+     "B 3s": 0.04,
+     "B 2p": 0.182,
+     "B 3d": 0.096,
+     "N 2p": 0.551,
+     "N 3p": 0.091
+    },
+    "log10_toffolis": 7.178
+   },
+   "c16:8": {
+    "n_electrons": 12,
+    "n_orbitals": 8,
+    "mo_indices": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9
+    ],
+    "window_ev": [
+     -11.073,
+     13.336
+    ],
+    "character": {
+     "B 3s": 0.035,
+     "B 2p": 0.194,
+     "B 3p": 0.176,
+     "B 3d": 0.084,
+     "N 2p": 0.494
+    },
+    "log10_toffolis": 7.321
+   },
+   "c17:9": {
+    "n_electrons": 12,
+    "n_orbitals": 9,
+    "mo_indices": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10
+    ],
+    "window_ev": [
+     -11.073,
+     18.361
+    ],
+    "character": {
+     "B 2s": 0.12,
+     "B 3s": 0.049,
+     "B 2p": 0.173,
+     "B 3p": 0.156,
+     "B 3d": 0.088,
+     "N 2s": 0.03,
+     "N 2p": 0.439
+    },
+    "log10_toffolis": 7.511
+   },
+   "c18:10": {
+    "n_electrons": 12,
+    "n_orbitals": 10,
+    "mo_indices": [
+     2,
+     3,
+     4,
+     5,
+     6,
+     7,
+     8,
+     9,
+     10,
+     11
+    ],
+    "window_ev": [
+     -11.073,
+     19.903
+    ],
+    "character": {
+     "B 2s": 0.108,
+     "B 3s": 0.044,
+     "B 2p": 0.301,
+     "B 3p": 0.066,
+     "B 3d": 0.084,
+     "N 2p": 0.408
+    },
+    "log10_toffolis": 7.617
+   }
+  }
+ }
+}

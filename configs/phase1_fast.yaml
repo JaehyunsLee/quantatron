@@ -1,0 +1,9 @@
+# Fast profile for a laptop / first pass: minimal GTH basis, same protocol otherwise.
+defaults: phase1.yaml
+
+paths:
+  work_dir: data/work_fast
+
+scf:
+  basis: gth-szv-molopt-sr
+  fallback_basis: gth-szv-molopt-sr

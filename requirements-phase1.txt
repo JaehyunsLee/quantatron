@@ -1,0 +1,11 @@
+# Phase 1 (offline table build) and evaluation. Python 3.11-3.13.
+pyscf>=2.14
+openfermion>=1.8
+qualtran>=0.7
+pymatgen>=2025.1
+mp-api            # optional: only used when MP_API_KEY is set (otherwise keyless OPTIMADE)
+numpy
+scipy
+pyyaml
+requests
+h5py

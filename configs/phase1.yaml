@@ -1,0 +1,54 @@
+# Phase 1: offline table build. Every material is run with the same settings so that
+# candidate scores are comparable across the dataset.
+
+paths:
+  raw_dir: data/raw                 # phasecraft.json + cifs/
+  work_dir: data/work               # per-material raw PySCF results (resumable)
+  env_data_dir: resources_servers/active_space/data   # what the NeMo Gym server loads
+
+scf:
+  basis: gth-dzvp-molopt-sr         # per element; La falls back to DZVP-MOLOPT-SR from the UCL file
+  fallback_basis: gth-szv-molopt-sr
+  pseudo: gth-pbe                   # the pseudopotentials the MOLOPT basis sets were optimized with
+  supercell: [1, 1, 1]              # fixed; auto-doubled along the shortest axis if the electron count is odd
+  kpts: gamma                       # Gamma-point only (supercell is the "molecule")
+  density_fit: gdf                  # gdf | rsgdf | fftdf
+  max_atoms: 40                     # skip materials whose supercell exceeds this (logged in the table)
+  conv_tol: 1.0e-7
+  max_cycle: 100
+  level_shift: 0.2
+  damp: 0.3
+
+localization:
+  method: pm                        # pm (Pipek-Mezey, meta-Lowdin populations) | boys; IBO needs all-electron IAOs
+  population: meta_lowdin           # atomic character from meta-Lowdin populations
+
+orbitals:
+  window_occ: 30                    # occupied orbitals (closest to the gap) exposed to the agent
+  window_vir: 30                    # virtual orbitals (closest to the gap) exposed to the agent
+  n_character_targets: 3            # number of "<El>-<nl>" selections in the menu besides "frontier"
+
+menu:
+  sizes: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]   # CAS(n e, n o), balanced n/2 occ + n/2 vir
+
+accuracy:
+  metric: mp2_pair                  # mp2_pair | no_proxy | casci (casci only up to casci_max_orb)
+  casci_max_orb: 12
+
+cost:
+  factorization: df                 # double factorization (von Burg et al.)
+  df_threshold: 1.0e-3              # eigenvalue truncation threshold in OpenFermion factorize()
+  delta_e: 0.0016                   # Hartree, chemical accuracy for QPE
+  chi: 10                           # bits for coefficient state preparation (aleph)
+  beta_rot: 20                      # bits for rotations (beth)
+  stps: 20000
+
+score:
+  beta: auto                        # score = accuracy - beta * log10(Toffolis); a number, or auto =
+                                    # the beta that makes the train-split oracle size most varied
+  near_oracle_tol: 0.05             # "within 5% of the oracle" == normalized reward >= 0.95
+
+split:
+  # Whole families are held out. Families are defined in active_space/families.py.
+  test_families: [tm_binary_oxide, compound_semiconductor, halide_perovskite]
+  validation_families: [layered_oxide]

@@ -1,0 +1,140 @@
+# GRPO (NeMo RL + NeMo Gym) for Nemotron 3.5 Lightning on the active_space_candidates environment.
+#
+# Single node, as few as 2-4 GPUs (vs. 8 for training/configs/grpo_active_space_lightning35.yaml). Train split is only
+# 16 materials (Phasecraft DZVP table),
+# so this is a hackathon-scale run, not a converged result: 4 materials x 12 rollouts = 48 episodes/step, 32 steps
+# (8 passes over the train set), ~470 s/step on 2x A100 80GB, ~4.2 h.
+#
+# v2 (after the first 20-step run: test reward 0.42 vs base 0.39, flat training reward, grad norm ~0.1, two loss spikes):
+# 6x higher LR, more rollouts per material, more steps, dual-clip on the PPO ratio. The prompt now also shows each
+# candidate's log10 Toffoli cost (active_space/prompts_candidates.py).
+#
+# training/launch_grpo_candidates.sh copies this file next to the NeMo RL example it inherits from, so the
+# relative `defaults:` path resolves inside $NEMO_RL_DIR/examples/nemo_gym/.
+
+defaults: grpo_workplace_assistant_nemotron_nano_v2_9b.yaml
+
+grpo:
+  num_prompts_per_step: 4             # 16 train materials / 4 = 4 steps per pass over the train set
+  num_generations_per_prompt: 12      # v1 used 8: more rollouts per material, steadier leave-one-out advantages
+  max_num_epochs: 20
+  max_num_steps: 32                   # 8 passes; v1's 20 steps x 5 materials saw each material only ~6 times
+  val_period: 0                       # no validation split in this environment (only train/test)
+  val_at_start: false
+  use_leave_one_out_baseline: true
+  normalize_rewards: true
+
+loss_fn:
+  reference_policy_kl_penalty: 0.0
+  # Dual clip: caps the loss of a token with a negative advantage at 3x its advantage. v1 had no cap and two steps
+  # with loss ~55-62 (advantages down to -11 from std-normalizing near-uniform groups), versus |loss| < 2.5 otherwise.
+  ratio_clip_c: 3.0
+
+checkpointing:
+  checkpoint_dir: results/grpo-active-space-candidates-lightning35-v2   # new dir: NeMo RL would resume from v1's step_20
+  metric_name: null                   # no validation metric to track (no validation split)
+  save_period: 8                      # steps 8, 16, 24, 32 (STEP=N bash brev/run_on_brev.sh evaltrained to try an earlier one)
+  keep_top_k: 4
+
+policy:
+  model_name: nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+  tokenizer:
+    name: ${policy.model_name}
+    chat_template_kwargs: null
+  max_total_sequence_length: 8192     # candidate-level prompts are much shorter (no per-orbital table)
+  make_sequence_length_divisible_by: ${policy.megatron_cfg.tensor_model_parallel_size}
+
+  megatron_cfg:
+    enabled: true
+    bias_activation_fusion: false
+    tensor_model_parallel_size: 2
+    expert_model_parallel_size: 2      # scaled down from 8; set to your node's GPU count
+    sequence_parallel: true
+    activation_checkpointing: true
+    moe_per_layer_logging: false       # required by NeMo RL v0.7.0's MegatronConfig; the parent example omits it
+    # Lightning ships one multi-token-prediction (MTP) layer. Megatron Bridge has no HF mapping for it here ("Skipping MTP
+    # flattening mappings"), so LoRA on mtp.layers.0.eh_proj breaks the refit to vLLM (prepare_refit_info: "Expected
+    # mapping for adapter base"). GRPO doesn't need it; dropping it also drops its 0.1-weighted auxiliary loss.
+    mtp_num_layers: 0
+    mtp_loss_scaling_factor: 0.0
+    mtp_use_repeated_layer: false
+    mtp_detach_heads: false
+    # With overlap_grad_reduce, Megatron's DDP requires every trainable param to get a gradient in the first backward;
+    # some LoRA adapters here get none on a batch, so train() died in zero_grad_buffer (per_param_grad_ready_counts
+    # assertion). TP2 x EP2 on 2 GPUs means data-parallel size 1, so overlapping the grad all-reduce saved nothing anyway.
+    distributed_data_parallel_config:
+      overlap_grad_reduce: false
+      overlap_param_gather: false
+    peft:                              # every MegatronPeftConfig field is required (nemo_rl/models/policy/__init__.py)
+      enabled: true
+      target_modules: []
+      exclude_modules: ['*out_proj*']  # Mamba2 out_proj gets no gradient with the CUDA kernels
+      dim: 32                          # smaller LoRA rank than the full run (64)
+      alpha: 64
+      dropout: 0.0
+      dropout_position: "post"
+      lora_A_init_method: "xavier"
+      lora_B_init_method: "zero"
+      a2a_experimental: false
+      lora_dtype: null
+      restore_from: null
+    optimizer:
+      lr: 3.0e-5                       # v1: 5e-6 gave grad norm ~0.1 and no visible change in training reward
+      min_lr: 3.0e-5
+
+  generation:
+    vllm_cfg:
+      tensor_parallel_size: 2
+      # With LoRA the frozen base weights (~31 GB/GPU at TP2/EP2) stay on the GPU during generation: offload_after_refit
+      # only moves the trainable buffers. 0.6 (48 GB: 29.5 weights + 16.8 KV) didn't fit next to them and vLLM's wake_up
+      # hit CUDA OOM. 0.5 leaves ~9 GB KV (~600k tokens, ~70 concurrent 8k sequences; a step needs 40).
+      gpu_memory_utilization: 0.5
+      max_model_len: ${policy.max_total_sequence_length}
+      expose_http_server: true
+      async_engine: true
+      http_server_serving_chat_kwargs:
+        enable_auto_tools: true
+        tool_parser: qwen3_coder
+        reasoning_parser: nano_v3
+      reasoning_parser_plugin: nemo_rl/models/generation/vllm/reasoning_parsers/nano_v3_reasoning_parser.py
+    vllm_kwargs:
+      mamba_ssm_cache_dtype: "float32"
+    colocated:
+      enabled: true
+
+data:
+  train:
+    data_path: ${oc.env:ACTIVE_SPACE_CANDIDATES_DATA}/train.jsonl
+  # Validation is disabled (val_period 0, val_at_start/at_end false), so run_grpo_nemo_gym.py never loads
+  # it (it prints "Skipping validation dataset"). The path only has to resolve; it deliberately is the
+  # TRAIN file, never the held-out test file.
+  validation:
+    data_path: ${oc.env:ACTIVE_SPACE_CANDIDATES_DATA}/train.jsonl
+
+env:
+  should_use_nemo_gym: true
+  nemo_gym:
+    config_paths:
+      - responses_api_models/vllm_model/configs/vllm_model_for_training.yaml
+      - resources_servers/active_space_candidates/configs/active_space_candidates.yaml
+    workplace_assistant_environment_server: null
+    code_gen: null
+    policy_model:
+      responses_api_models:
+        vllm_model:
+          uses_reasoning_parser: true
+          extra_body:
+            chat_template_kwargs:
+              enable_thinking: true
+
+logger:
+  log_dir: logs/grpo-active-space-candidates-lightning35-v2
+  wandb_enabled: false
+  tensorboard_enabled: true
+  wandb:
+    project: active-space-gym
+    name: candidates-lightning35-grpo
+
+cluster:
+  gpus_per_node: 2   # set to whatever you actually have; EP/TP above assume 2
+  num_nodes: 1

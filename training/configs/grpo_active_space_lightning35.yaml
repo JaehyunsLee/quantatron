@@ -1,0 +1,120 @@
+# GRPO (NeMo RL + NeMo Gym) for Nemotron 3.5 Lightning on the active-space environment.
+#
+# Single node, 8x H100/B200 (Brev). LoRA on the Megatron backend, EP=8, with vLLM generation
+# colocated on the same GPUs. launch_grpo.sh copies this file next to the NeMo RL example it
+# inherits from, so the relative `defaults:` path resolves inside $NEMO_RL_DIR/examples/nemo_gym/.
+#
+# The train split is ~27 materials, so a "step" is 8 materials x 16 rollouts and an epoch is
+# ~3-4 steps; max_num_steps bounds total compute (each step is a few minutes on 8 GPUs).
+
+defaults: grpo_workplace_assistant_nemotron_nano_v2_9b.yaml
+
+grpo:
+  num_prompts_per_step: 8
+  num_generations_per_prompt: 16        # "several rollouts per material" -> group-relative advantages
+  max_num_epochs: 40
+  max_num_steps: 120
+  val_period: 5
+  val_at_start: true                    # step-0 validation == the untrained baseline on validation
+  val_num_generations_per_prompt: 4
+  use_leave_one_out_baseline: true
+  normalize_rewards: true
+
+loss_fn:
+  reference_policy_kl_penalty: 0.0
+
+checkpointing:
+  checkpoint_dir: results/grpo-active-space-lightning35
+  metric_name: "val:accuracy"
+  save_period: 5
+  keep_top_k: 3
+
+policy:
+  model_name: nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16
+  tokenizer:
+    name: ${policy.model_name}
+    chat_template_kwargs: null
+  max_total_sequence_length: 16384      # prompt (~2-3k) + tool results + reasoning
+  make_sequence_length_divisible_by: ${policy.megatron_cfg.tensor_model_parallel_size}
+
+  megatron_cfg:
+    enabled: true
+    bias_activation_fusion: false
+    tensor_model_parallel_size: 2
+    expert_model_parallel_size: 8
+    sequence_parallel: true
+    activation_checkpointing: true
+    moe_per_layer_logging: false        # required by NeMo RL v0.7.0's MegatronConfig
+    # Drop Lightning's MTP layer: Megatron Bridge can't map its LoRA adapter back to HF for the vLLM refit.
+    mtp_num_layers: 0
+    mtp_loss_scaling_factor: 0.0
+    mtp_use_repeated_layer: false
+    mtp_detach_heads: false
+    peft:                               # all MegatronPeftConfig fields are required (nemo_rl/models/policy/__init__.py)
+      enabled: true                     # LoRA keeps the 30B MoE update + optimizer on one node
+      target_modules: []
+      exclude_modules: ['*out_proj*']   # Mamba2 out_proj gets no gradient with the CUDA kernels
+      dim: 64
+      alpha: 128
+      dropout: 0.0
+      dropout_position: "post"
+      lora_A_init_method: "xavier"
+      lora_B_init_method: "zero"
+      a2a_experimental: false
+      lora_dtype: null
+      restore_from: null
+    optimizer:
+      lr: 5.0e-6
+      min_lr: 5.0e-6
+
+  generation:
+    vllm_cfg:
+      tensor_parallel_size: 4
+      gpu_memory_utilization: 0.6
+      max_model_len: ${policy.max_total_sequence_length}
+      expose_http_server: true
+      async_engine: true
+      http_server_serving_chat_kwargs:
+        enable_auto_tools: true
+        tool_parser: qwen3_coder
+        reasoning_parser: nano_v3
+      reasoning_parser_plugin: nemo_rl/models/generation/vllm/reasoning_parsers/nano_v3_reasoning_parser.py
+    vllm_kwargs:
+      mamba_ssm_cache_dtype: "float32"
+    colocated:
+      enabled: true
+
+data:
+  train:
+    data_path: ${oc.env:ACTIVE_SPACE_DATA}/train.jsonl
+  validation:
+    data_path: ${oc.env:ACTIVE_SPACE_DATA}/validation.jsonl
+
+env:
+  should_use_nemo_gym: true
+  nemo_gym:
+    config_paths:
+      - responses_api_models/vllm_model/configs/vllm_model_for_training.yaml
+      - resources_servers/active_space/configs/active_space.yaml
+    # Blocks inherited from the workplace example that do not apply here.
+    workplace_assistant_environment_server: null
+    code_gen: null
+    policy_model:
+      responses_api_models:
+        vllm_model:
+          uses_reasoning_parser: true
+          extra_body:
+            chat_template_kwargs:
+              enable_thinking: true
+
+logger:
+  log_dir: logs/grpo-active-space-lightning35
+  wandb_enabled: false
+  tensorboard_enabled: true
+  wandb:
+    project: active-space-gym
+    name: lightning35-grpo
+
+cluster:
+  gpus_per_node: 8
+  num_nodes: 1

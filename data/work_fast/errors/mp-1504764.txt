@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "/Users/jaehyunlee/Documents/Work/PhD/Research/NVDA Hackathon/active_space/pipeline.py", line 173, in localize
+    return loc.kernel()
+           ~~~~~~~~~~^^
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/pipek.py", line 531, in kernel
+    self._proj_data = self.get_proj_data()
+                      ~~~~~~~~~~~~~~~~~~^^
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/pipek.py", line 436, in get_proj_data
+    proj_data = get_proj_data(mol, mo_coeff, method, kpt, minao=minao)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/pipek.py", line 302, in get_proj_data
+    proj_coeff = orth.orth_ao(mol, method, 'ANO', s=s, adjust_phase=False)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/orth.py", line 334, in orth_ao
+    pre_orth_ao = restore_ao_character(mol, pre_orth_ao)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/orth.py", line 71, in pre_orth_ao
+    return project_to_atomic_orbitals(mol, method)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/orth.py", line 188, in project_to_atomic_orbitals
+    if abs(ecp_ano_det_ovlp(atm, atmp, ecpcore)) > .1:
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/orth.py", line 125, in ecp_ano_det_ovlp
+    ecp_occ[ecp_idx] = numpy.hstack(ecp_occ_tmp)
+    ~~~~~~~^^^^^^^^^
+ValueError: shape mismatch: value array of shape (8,) could not be broadcast to indexing result of shape (5,)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jaehyunlee/Documents/Work/PhD/Research/NVDA Hackathon/scripts/02_run_pyscf.py", line 28, in _run
+    r = run_material(rec, cfg, cfg["paths"]["raw_dir"], cfg["paths"]["work_dir"])
+  File "/Users/jaehyunlee/Documents/Work/PhD/Research/NVDA Hackathon/active_space/pipeline.py", line 312, in run_material
+    C_loc = localize(cell, C_w[:, cols], cfg["localization"]["method"])
+  File "/Users/jaehyunlee/Documents/Work/PhD/Research/NVDA Hackathon/active_space/pipeline.py", line 178, in localize
+    return loc.kernel()
+           ~~~~~~~~~~^^
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/pipek.py", line 532, in kernel
+    mo_coeff = boys.kernel(self, mo_coeff, callback, verbose)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/boys.py", line 61, in kernel
+    u0 = localizer.get_init_guess(localizer.init_guess)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/boys.py", line 217, in get_init_guess
+    u0 = self.init_guess_by_atomic()
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/boys.py", line 232, in init_guess_by_atomic
+    return atomic_init_guess(self.mol, self.mo_coeff)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/boys.py", line 141, in atomic_init_guess
+    c = orth.orth_ao(mol, s=s)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/orth.py", line 334, in orth_ao
+    pre_orth_ao = restore_ao_character(mol, pre_orth_ao)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/orth.py", line 71, in pre_orth_ao
+    return project_to_atomic_orbitals(mol, method)
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/orth.py", line 188, in project_to_atomic_orbitals
+    if abs(ecp_ano_det_ovlp(atm, atmp, ecpcore)) > .1:
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/claude-501/-Users-jaehyunlee-Documents-Work-PhD-Research-NVDA-Hackathon/280a69b9-0756-4309-9d0c-11d2fbcd74a5/scratchpad/chemenv/lib/python3.13/site-packages/pyscf/lo/orth.py", line 125, in ecp_ano_det_ovlp
+    ecp_occ[ecp_idx] = numpy.hstack(ecp_occ_tmp)
+    ~~~~~~~^^^^^^^^^
+ValueError: shape mismatch: value array of shape (8,) could not be broadcast to indexing result of shape (5,)

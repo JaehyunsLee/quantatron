@@ -1,0 +1,42 @@
+# Secrets (never commit tokens; see brev/BREV_TOKEN.md)
+.env
+.env.*
+*.env
+*.pem
+*.key
+auth.json
+env.yaml
+
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+.venv-*/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Run outputs (regenerable). Anchored to the repo root so docs/results/ stays tracked.
+/results/
+/logs/
+/checkpoints/
+outputs/
+*.log
+
+# NeMo Gym artifacts: per-server uv venvs, built-in servers it materializes when started here, uv cache
+.venv.setup.lock
+resources_servers/*/.venv/
+resources_servers/*/data/*_prepare.jsonl
+/responses_api_agents/
+/responses_api_models/
+/environment_servers/
+cache/
+
+# OS / editors
+.DS_Store
+._*
+Thumbs.db
+.vscode/
+.idea/
+*.swp

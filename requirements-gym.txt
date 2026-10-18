@@ -1,0 +1,4 @@
+# Phase 2/3 client side: NeMo Gym CLI (servers get their own uv venvs from resources_servers/*/requirements.txt).
+nemo-gym>=0.7
+uv
+pytest

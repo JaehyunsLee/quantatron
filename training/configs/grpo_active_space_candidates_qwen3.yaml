@@ -1,0 +1,36 @@
+# active_space_candidates GRPO for a small dense Qwen3 model, as a comparison point for Nemotron 3.5 Lightning.
+#
+# Everything that defines the experiment (data, GRPO batch, steps, LR, LoRA rank, reward) is inherited from the
+# Lightning config, so the two runs differ only in the policy model and what that model needs. brev/run_on_brev.sh
+# picks the size with MODEL=qwen3-1.7b | qwen3-4b | qwen3-8b and passes policy.model_name / checkpoint and log dirs.
+#
+# training/launch_grpo_candidates.sh copies both candidates configs next to the NeMo RL examples, so this relative
+# `defaults:` resolves.
+
+defaults: grpo_active_space_candidates_lightning35.yaml
+
+checkpointing:
+  checkpoint_dir: results/grpo-active-space-candidates-qwen3
+
+policy:
+  model_name: Qwen/Qwen3-4B           # hybrid thinking model; overridden per size by run_on_brev.sh
+
+  megatron_cfg:
+    expert_model_parallel_size: 1     # dense model (the Lightning parent uses EP2 for its MoE layers)
+    # tensor_model_parallel_size 2, LoRA rank 32 / alpha 64, MTP off and no grad-reduce overlap are inherited.
+    # exclude_modules ['*out_proj*'] matches nothing in Qwen3 (attention is linear_qkv/linear_proj), so LoRA
+    # covers every linear layer, the same rule as for Lightning.
+
+  generation:
+    vllm_cfg:
+      gpu_memory_utilization: 0.6     # the frozen base is small (<= 8 GB/GPU), so vLLM can take more than Lightning's 0.5
+      http_server_serving_chat_kwargs:
+        enable_auto_tools: true
+        tool_parser: hermes           # Qwen3 emits <tool_call>{json}</tool_call>
+        reasoning_parser: deepseek_r1 # <think>...</think>; same choice as NeMo RL's Qwen3-1.7B + NeMo Gym recipe
+      reasoning_parser_plugin: null   # the parent loads Nemotron's nano_v3 parser plugin
+
+logger:
+  log_dir: logs/grpo-active-space-candidates-qwen3
+  wandb:
+    name: candidates-qwen3-grpo

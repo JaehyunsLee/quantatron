@@ -1,0 +1,31 @@
+active_space_candidates:
+  resources_servers:
+    active_space_candidates:
+      entrypoint: app.py
+      domain: agent
+      verified: false
+      description: Candidate-level active-space selection (24 materials, Phasecraft DZVP table), scored by accuracy vs. Toffoli cost
+      value: Compact version of the active-space benchmark that trains on 2 GPUs
+
+active_space_candidates_simple_agent:
+  responses_api_agents:
+    simple_agent:
+      entrypoint: app.py
+      max_steps: 6
+      resources_server:
+        type: resources_servers
+        name: active_space_candidates
+      model_server:
+        type: responses_api_models
+        name: policy_model
+      datasets:
+        - name: train
+          type: train
+          jsonl_fpath: resources_servers/active_space_candidates/data/train.jsonl
+          license: Apache 2.0
+
+# The test split (resources_servers/active_space_candidates/data/test.jsonl) is deliberately not declared here, so it can never be
+# collated into training data. Evaluate it with `gym eval run --no-serve ...` (see scripts/candidates/run_eval.sh).
+
+# The `environment_servers` wrapper that `gym eval run` (pip nemo-gym >= 0.7) uses lives in active_space_candidates_eval.yaml.
+# The older Gym pinned by NeMo RL v0.7.0 has no environment_servers/ and fails to start one, so training never loads it.

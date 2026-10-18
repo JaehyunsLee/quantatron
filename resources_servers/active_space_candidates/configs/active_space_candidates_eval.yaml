@@ -1,0 +1,9 @@
+# Eval-only addition to active_space_candidates.yaml: pip nemo-gym >= 0.7 drives `gym eval run` through an environment
+# server that relays to the agent. Not passed to training (see scripts/candidates/run_eval.sh vs training/launch_grpo_candidates.sh).
+active_space_candidates_environment_server:
+  environment_servers:
+    legacy_agent:
+      entrypoint: app.py
+      agent_server:
+        type: responses_api_agents
+        name: active_space_candidates_simple_agent

@@ -1,0 +1,646 @@
+{
+ "material_id": "mp-35925",
+ "name": "NiO2",
+ "meta": {
+  "basis": {
+   "Ni": "gth-szv-molopt-sr",
+   "O": "gth-szv-molopt-sr"
+  },
+  "pseudo": "gth-pbe",
+  "supercell": [
+   1,
+   1,
+   1
+  ],
+  "n_cells": 1,
+  "natom_supercell": 3,
+  "nelectron": 30,
+  "nao": 18,
+  "scf_converged": true,
+  "e_hf": -199.17389594195765,
+  "e_corr_mp2": -0.6689232847719562,
+  "homo_lumo_gap_eV": 9.959007926602276,
+  "window_occ": 15,
+  "window_vir": 3,
+  "wall_time_s": 21.7
+ },
+ "character_keys": [
+  "Ni-3d",
+  "Ni-3p",
+  "Ni-3s",
+  "Ni-4s",
+  "O-2p",
+  "O-2s"
+ ],
+ "targets": [
+  "O-2p",
+  "Ni-3d",
+  "O-2s"
+ ],
+ "localized_counts": {
+  "Ni-3s": {
+   "occ": 1,
+   "vir": 0
+  },
+  "Ni-3p": {
+   "occ": 3,
+   "vir": 0
+  },
+  "O-2s": {
+   "occ": 2,
+   "vir": 0
+  },
+  "Ni-3d": {
+   "occ": 3,
+   "vir": 0
+  },
+  "O-2p": {
+   "occ": 6,
+   "vir": 2
+  },
+  "Ni-4s": {
+   "occ": 0,
+   "vir": 1
+  }
+ },
+ "orbitals": [
+  {
+   "index": -15,
+   "energy_eV": -134.052,
+   "occupation": 2,
+   "mp2_occupation": 1.9996,
+   "character": {
+    "Ni-3s": 0.998
+   }
+  },
+  {
+   "index": -14,
+   "energy_eV": -84.704,
+   "occupation": 2,
+   "mp2_occupation": 1.9994,
+   "character": {
+    "Ni-3p": 1.0
+   }
+  },
+  {
+   "index": -13,
+   "energy_eV": -84.704,
+   "occupation": 2,
+   "mp2_occupation": 1.9994,
+   "character": {
+    "Ni-3p": 1.0
+   }
+  },
+  {
+   "index": -12,
+   "energy_eV": -84.289,
+   "occupation": 2,
+   "mp2_occupation": 1.9997,
+   "character": {
+    "Ni-3p": 1.0
+   }
+  },
+  {
+   "index": -11,
+   "energy_eV": -27.785,
+   "occupation": 2,
+   "mp2_occupation": 1.9954,
+   "character": {
+    "O-2s": 0.625,
+    "Ni-4s": 0.334
+   }
+  },
+  {
+   "index": -10,
+   "energy_eV": -24.519,
+   "occupation": 2,
+   "mp2_occupation": 1.9793,
+   "character": {
+    "O-2s": 1.0
+   }
+  },
+  {
+   "index": -9,
+   "energy_eV": -12.783,
+   "occupation": 2,
+   "mp2_occupation": 1.9908,
+   "character": {
+    "Ni-3d": 0.96
+   }
+  },
+  {
+   "index": -8,
+   "energy_eV": -12.783,
+   "occupation": 2,
+   "mp2_occupation": 1.9908,
+   "character": {
+    "Ni-3d": 0.96
+   }
+  },
+  {
+   "index": -7,
+   "energy_eV": -12.555,
+   "occupation": 2,
+   "mp2_occupation": 1.9987,
+   "character": {
+    "Ni-3d": 0.786,
+    "O-2p": 0.175
+   }
+  },
+  {
+   "index": -6,
+   "energy_eV": -10.083,
+   "occupation": 2,
+   "mp2_occupation": 1.9268,
+   "character": {
+    "Ni-3d": 0.674,
+    "O-2p": 0.326
+   }
+  },
+  {
+   "index": -5,
+   "energy_eV": -10.083,
+   "occupation": 2,
+   "mp2_occupation": 1.9268,
+   "character": {
+    "Ni-3d": 0.674,
+    "O-2p": 0.326
+   }
+  },
+  {
+   "index": -4,
+   "energy_eV": -4.96,
+   "occupation": 2,
+   "mp2_occupation": 1.9975,
+   "character": {
+    "O-2p": 0.732,
+    "Ni-3d": 0.202
+   }
+  },
+  {
+   "index": -3,
+   "energy_eV": -3.352,
+   "occupation": 2,
+   "mp2_occupation": 1.9535,
+   "character": {
+    "O-2p": 1.0
+   }
+  },
+  {
+   "index": -2,
+   "energy_eV": -0.0,
+   "occupation": 2,
+   "mp2_occupation": 1.3764,
+   "character": {
+    "O-2p": 1.0
+   }
+  },
+  {
+   "index": -1,
+   "energy_eV": 0.0,
+   "occupation": 2,
+   "mp2_occupation": 1.3764,
+   "character": {
+    "O-2p": 1.0
+   }
+  },
+  {
+   "index": 0,
+   "energy_eV": 9.959,
+   "occupation": 0,
+   "mp2_occupation": 0.7087,
+   "character": {
+    "O-2p": 0.633,
+    "Ni-3d": 0.367
+   }
+  },
+  {
+   "index": 1,
+   "energy_eV": 9.959,
+   "occupation": 0,
+   "mp2_occupation": 0.7087,
+   "character": {
+    "O-2p": 0.633,
+    "Ni-3d": 0.367
+   }
+  },
+  {
+   "index": 2,
+   "energy_eV": 18.97,
+   "occupation": 0,
+   "mp2_occupation": 0.0721,
+   "character": {
+    "Ni-4s": 0.646,
+    "O-2s": 0.288,
+    "O-2p": 0.065
+   }
+  }
+ ],
+ "menu": {
+  "frontier:2": {
+   "selection": "frontier",
+   "n_orbitals": 2,
+   "n_electrons": 2,
+   "occ": [
+    14
+   ],
+   "vir": [
+    15
+   ]
+  },
+  "frontier:4": {
+   "selection": "frontier",
+   "n_orbitals": 4,
+   "n_electrons": 4,
+   "occ": [
+    13,
+    14
+   ],
+   "vir": [
+    15,
+    16
+   ]
+  },
+  "frontier:6": {
+   "selection": "frontier",
+   "n_orbitals": 6,
+   "n_electrons": 6,
+   "occ": [
+    12,
+    13,
+    14
+   ],
+   "vir": [
+    15,
+    16,
+    17
+   ]
+  },
+  "O-2p:2": {
+   "selection": "O-2p",
+   "n_orbitals": 2,
+   "n_electrons": 2,
+   "occ": [
+    14
+   ],
+   "vir": [
+    15
+   ]
+  },
+  "O-2p:4": {
+   "selection": "O-2p",
+   "n_orbitals": 4,
+   "n_electrons": 4,
+   "occ": [
+    13,
+    14
+   ],
+   "vir": [
+    15,
+    16
+   ]
+  },
+  "O-2p:6": {
+   "selection": "O-2p",
+   "n_orbitals": 6,
+   "n_electrons": 6,
+   "occ": [
+    12,
+    13,
+    14
+   ],
+   "vir": [
+    15,
+    16,
+    17
+   ]
+  },
+  "Ni-3d:2": {
+   "selection": "Ni-3d",
+   "n_orbitals": 2,
+   "n_electrons": 2,
+   "occ": [
+    7
+   ],
+   "vir": [
+    15
+   ]
+  },
+  "Ni-3d:4": {
+   "selection": "Ni-3d",
+   "n_orbitals": 4,
+   "n_electrons": 4,
+   "occ": [
+    6,
+    7
+   ],
+   "vir": [
+    15,
+    16
+   ]
+  },
+  "Ni-3d:6": {
+   "selection": "Ni-3d",
+   "n_orbitals": 6,
+   "n_electrons": 6,
+   "occ": [
+    6,
+    7,
+    8
+   ],
+   "vir": [
+    15,
+    16,
+    17
+   ]
+  },
+  "O-2s:2": {
+   "selection": "O-2s",
+   "n_orbitals": 2,
+   "n_electrons": 2,
+   "occ": [
+    5
+   ],
+   "vir": [
+    17
+   ]
+  },
+  "O-2s:4": {
+   "selection": "O-2s",
+   "n_orbitals": 4,
+   "n_electrons": 4,
+   "occ": [
+    4,
+    5
+   ],
+   "vir": [
+    15,
+    17
+   ]
+  },
+  "O-2s:6": {
+   "selection": "O-2s",
+   "n_orbitals": 6,
+   "n_electrons": 6,
+   "occ": [
+    4,
+    5,
+    11
+   ],
+   "vir": [
+    15,
+    16,
+    17
+   ]
+  }
+ },
+ "candidates": {
+  "frontier:2": {
+   "acc_mp2_pair": 0.1315195540560103,
+   "acc_no_proxy": 0.44723179588201045,
+   "acc_casci": 0.10165129725485601,
+   "norb": 2,
+   "lambda": 1.015269724437122,
+   "df_rank": 3,
+   "df_num_eig": 6,
+   "qpe_steps": 997,
+   "toffoli_per_step": 809,
+   "toffolis": 806573,
+   "logical_qubits": 84,
+   "rank_pad": 8,
+   "of_toffoli_per_step": 824,
+   "of_toffolis": 821528,
+   "of_logical_qubits": 160,
+   "of_rank_pad": 8
+  },
+  "frontier:4": {
+   "acc_mp2_pair": 0.6492296973084442,
+   "acc_no_proxy": 0.8944632994034614,
+   "acc_casci": 0.2685450183143948,
+   "norb": 4,
+   "lambda": 3.5512194977534812,
+   "df_rank": 9,
+   "df_num_eig": 36,
+   "qpe_steps": 3487,
+   "toffoli_per_step": 1510,
+   "toffolis": 5265370,
+   "logical_qubits": 134,
+   "rank_pad": 4,
+   "of_toffoli_per_step": 1525,
+   "of_toffolis": 5317675,
+   "of_logical_qubits": 215,
+   "of_rank_pad": 4
+  },
+  "frontier:6": {
+   "acc_mp2_pair": 0.7287707790661065,
+   "acc_no_proxy": 0.9342518926898246,
+   "acc_casci": 0.29386676815066204,
+   "norb": 6,
+   "lambda": 6.471962336930535,
+   "df_rank": 20,
+   "df_num_eig": 99,
+   "qpe_steps": 6354,
+   "toffoli_per_step": 2004,
+   "toffolis": 12733416,
+   "logical_qubits": 180,
+   "rank_pad": 2,
+   "of_toffoli_per_step": 2020,
+   "of_toffolis": 12835080,
+   "of_logical_qubits": 264,
+   "of_rank_pad": 2
+  },
+  "O-2p:2": {
+   "acc_mp2_pair": 0.1315195540560103,
+   "acc_no_proxy": 0.44723179588201045,
+   "acc_casci": 0.10165129725485601,
+   "norb": 2,
+   "lambda": 1.015269724437122,
+   "df_rank": 3,
+   "df_num_eig": 6,
+   "qpe_steps": 997,
+   "toffoli_per_step": 809,
+   "toffolis": 806573,
+   "logical_qubits": 84,
+   "rank_pad": 8,
+   "of_toffoli_per_step": 824,
+   "of_toffolis": 821528,
+   "of_logical_qubits": 160,
+   "of_rank_pad": 8
+  },
+  "O-2p:4": {
+   "acc_mp2_pair": 0.6492296973084442,
+   "acc_no_proxy": 0.8944632994034614,
+   "acc_casci": 0.2685450183143948,
+   "norb": 4,
+   "lambda": 3.5512194977534812,
+   "df_rank": 9,
+   "df_num_eig": 36,
+   "qpe_steps": 3487,
+   "toffoli_per_step": 1510,
+   "toffolis": 5265370,
+   "logical_qubits": 134,
+   "rank_pad": 4,
+   "of_toffoli_per_step": 1525,
+   "of_toffolis": 5317675,
+   "of_logical_qubits": 215,
+   "of_rank_pad": 4
+  },
+  "O-2p:6": {
+   "acc_mp2_pair": 0.7287707790661065,
+   "acc_no_proxy": 0.9342518926898246,
+   "acc_casci": 0.29386676815066204,
+   "norb": 6,
+   "lambda": 6.471962336930535,
+   "df_rank": 20,
+   "df_num_eig": 99,
+   "qpe_steps": 6354,
+   "toffoli_per_step": 2004,
+   "toffolis": 12733416,
+   "logical_qubits": 180,
+   "rank_pad": 2,
+   "of_toffoli_per_step": 2020,
+   "of_toffolis": 12835080,
+   "of_logical_qubits": 264,
+   "of_rank_pad": 2
+  },
+  "Ni-3d:2": {
+   "acc_mp2_pair": 0.001214531875535003,
+   "acc_no_proxy": 0.2410054456145282,
+   "acc_casci": 0.0016105377309875632,
+   "norb": 2,
+   "lambda": 1.1614694437504758,
+   "df_rank": 3,
+   "df_num_eig": 6,
+   "qpe_steps": 1141,
+   "toffoli_per_step": 809,
+   "toffolis": 923069,
+   "logical_qubits": 84,
+   "rank_pad": 8,
+   "of_toffoli_per_step": 824,
+   "of_toffolis": 940184,
+   "of_logical_qubits": 162,
+   "of_rank_pad": 8
+  },
+  "Ni-3d:4": {
+   "acc_mp2_pair": 0.004556190884313748,
+   "acc_no_proxy": 0.48201074323366894,
+   "acc_casci": 0.006035955942759996,
+   "norb": 4,
+   "lambda": 3.815785978997138,
+   "df_rank": 10,
+   "df_num_eig": 40,
+   "qpe_steps": 3747,
+   "toffoli_per_step": 1256,
+   "toffolis": 4706232,
+   "logical_qubits": 131,
+   "rank_pad": 2,
+   "of_toffoli_per_step": 1269,
+   "of_toffolis": 4754943,
+   "of_logical_qubits": 212,
+   "of_rank_pad": 2
+  },
+  "Ni-3d:6": {
+   "acc_mp2_pair": 0.005611653553292661,
+   "acc_no_proxy": 0.506640065272015,
+   "acc_casci": 0.007190285242889128,
+   "norb": 6,
+   "lambda": 7.567714971812212,
+   "df_rank": 21,
+   "df_num_eig": 104,
+   "qpe_steps": 7430,
+   "toffoli_per_step": 2036,
+   "toffolis": 15127480,
+   "logical_qubits": 180,
+   "rank_pad": 2,
+   "of_toffoli_per_step": 2049,
+   "of_toffolis": 15224070,
+   "of_logical_qubits": 264,
+   "of_rank_pad": 2
+  },
+  "O-2s:2": {
+   "acc_mp2_pair": 0.002060615718962365,
+   "acc_no_proxy": 0.031135810691961856,
+   "acc_casci": 0.0021704115924188736,
+   "norb": 2,
+   "lambda": 1.804138964290157,
+   "df_rank": 3,
+   "df_num_eig": 6,
+   "qpe_steps": 1772,
+   "toffoli_per_step": 809,
+   "toffolis": 1433548,
+   "logical_qubits": 84,
+   "rank_pad": 8,
+   "of_toffoli_per_step": 824,
+   "of_toffolis": 1460128,
+   "of_logical_qubits": 162,
+   "of_rank_pad": 8
+  },
+  "O-2s:4": {
+   "acc_mp2_pair": 0.005662421195142723,
+   "acc_no_proxy": 0.270594993972022,
+   "acc_casci": 0.005528709980275189,
+   "norb": 4,
+   "lambda": 4.15534634107111,
+   "df_rank": 10,
+   "df_num_eig": 30,
+   "qpe_steps": 4080,
+   "toffoli_per_step": 1439,
+   "toffolis": 5871120,
+   "logical_qubits": 133,
+   "rank_pad": 4,
+   "of_toffoli_per_step": 1454,
+   "of_toffolis": 5932320,
+   "of_logical_qubits": 214,
+   "of_rank_pad": 4
+  },
+  "O-2s:6": {
+   "acc_mp2_pair": 0.009900229262554522,
+   "acc_no_proxy": 0.5093310020091409,
+   "acc_casci": 0.00978332726384431,
+   "norb": 6,
+   "lambda": 6.260594696263169,
+   "df_rank": 20,
+   "df_num_eig": 64,
+   "qpe_steps": 6147,
+   "toffoli_per_step": 1814,
+   "toffolis": 11150658,
+   "logical_qubits": 180,
+   "rank_pad": 2,
+   "of_toffoli_per_step": 1827,
+   "of_toffolis": 11230569,
+   "of_logical_qubits": 264,
+   "of_rank_pad": 2
+  }
+ },
+ "baselines": {
+  "avas": {
+   "target": "Ni-3d",
+   "n_raw": 7,
+   "choice": "Ni-3d:6"
+  },
+  "no_threshold": {
+   "n_raw": 8,
+   "choice": "frontier:6"
+  }
+ },
+ "natural_occupations": [
+  1.99982,
+  1.9997,
+  1.99955,
+  1.99955,
+  1.99944,
+  1.99944,
+  1.99923,
+  1.9982,
+  1.99782,
+  1.99396,
+  1.93498,
+  1.91807,
+  1.91807,
+  1.37632,
+  1.37632,
+  0.70875,
+  0.70875,
+  0.07207
+ ]
+}

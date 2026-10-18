@@ -1,0 +1,6 @@
+# Building the active_space_candidates data and analysing results (scripts/candidates/). Python >= 3.11.
+pandas
+numpy
+matplotlib
+tensorboard   # only for scripts/candidates/plot_results.py (reads NeMo RL training metrics)
+pyyaml
