@@ -16,19 +16,57 @@ The task is wrapped as a [NeMo Gym](https://github.com/NVIDIA-NeMo/Gym) environm
 (30B-A3B MoE) is trained on it with GRPO + LoRA in [NeMo RL](https://github.com/NVIDIA-NeMo/RL), with rollouts and
 evaluation served by vLLM.
 
+## Demo: Active-Space Atlas
+
+The Active-Space Atlas dashboard walks through the project in three tabs: the oracle data (Phase 1), training
+(Phase 2) and evaluation (Phase 3).
+
+### 1 · Oracle data
+
+Which Phasecraft materials have labels: 26 labelled materials with 330 labelled candidates, from a 12-orbital
+reference window at 1.6 mHa phase-estimation precision.
+
+![Phasecraft materials and labelling status](docs/demo/1_materials.png)
+
+One material up close (NiO2): its crystal structure, and the orbital window with the levels of the oracle active space
+highlighted.
+
+![NiO2 crystal and orbital window](docs/demo/2_material_detail.png)
+
+Every candidate active space for NiO2, plotted as accuracy against Toffoli count. Points on the same dashed line have
+the same score, so the oracle (★) sits on the highest line.
+
+![Accuracy vs quantum cost and the candidate table](docs/demo/3_accuracy_vs_cost.png)
+
+### 2 · Training
+
+The NeMo Gym loop: the resources server exposes the menu, the policy calls tools, a hidden `verify()` scores the pick,
+and GRPO + LoRA updates the policy.
+
+![Training setup](docs/demo/4_training_setup.png)
+
+Mean reward per GRPO step, with the spread across rollouts underneath. The rollouts agree from step 140 on, so GRPO's
+group-relative advantage vanishes and the policy stops changing.
+
+![Reward during GRPO training](docs/demo/5_training_reward.png)
+
+### 3 · Evaluation
+
+Untrained vs. GRPO-trained model against a random pick, on the training materials and on held-out materials.
+
 ## Results
 
 On 8 held-out materials from two chemical families never seen in training (transition-metal binary oxides and ionic
 salts), 16 rollouts per material:
 
-| Method | Mean test reward [95% CI] | Near-oracle rate | Valid answers |
-| --- | --- | --- | --- |
-| Random menu entry | 0.399 [0.303, 0.502] | 0.148 | 1.00 |
-| Rule: largest candidate | **0.741** [0.459, 0.965] | 0.500 | 1.00 |
-| Rule: tightest energy window per orbital | 0.693 [0.437, 0.909] | 0.250 | 1.00 |
-| Nemotron 3.5 Lightning, base | 0.404 [0.238, 0.588] | 0.078 | 0.98 |
-| Nemotron 3.5 Lightning, GRPO (v2 run) | 0.411 [0.238, 0.602] | 0.078 | 0.95 |
-| Qwen3-1.7B, base | 0.359 [0.191, 0.553] | 0.164 | 0.87 |
+| Method                                   | Mean test reward [95% CI]      | Near-oracle rate | Valid answers |
+| ---------------------------------------- | ------------------------------ | ---------------- | ------------- |
+| Random menu entry                        | 0.399 [0.303, 0.502]           | 0.148            | 1.00          |
+| Rule: largest candidate                  | **0.741** [0.459, 0.965] | 0.500            | 1.00          |
+| Rule: tightest energy window per orbital | 0.693 [0.437, 0.909]           | 0.250            | 1.00          |
+| Nemotron 3.5 Lightning, base             | 0.404 [0.238, 0.588]           | 0.078            | 0.98          |
+| Nemotron 3.5 Lightning, GRPO (v2 run)    | 0.411 [0.238, 0.602]           | 0.078            | 0.95          |
+| Qwen3-1.7B, base                         | 0.359 [0.191, 0.553]           | 0.164            | 0.87          |
 
 The oracle scores 1.0 by construction. CIs are bootstrapped over materials. Near-oracle means reward ≥ 0.95.
 
@@ -57,15 +95,15 @@ Per-material results: [`docs/figures/candidates_test_per_material.png`](docs/fig
 The repo has two environments for the same task. They share the tools, the reward and the verify-only scoring, but
 differ in where the data comes from and how much the agent sees.
 
-| | `active_space_candidates` (trained) | `active_space` (full pipeline) |
-| --- | --- | --- |
-| Data | Precomputed Phasecraft DZVP table ([`data/phasecraft_tables/`](data/phasecraft_tables/)) | Built here from scratch: PySCF RHF → localization → MP2 accuracy proxy → OpenFermion/Qualtran cost |
-| Materials | 24 (16 train / 8 test) | 46 (27 train / 5 validation / 14 test with the fast SZV table) |
-| Agent sees | Per-candidate summary: size, energy window, atomic character, log10 Toffoli cost | Per-orbital table: energies, occupations, atomic character |
-| β | 0.2 (fixed by the table) | Chosen automatically to maximize the diversity of oracle sizes |
-| Training | 2 GPUs (Brev, 2× A100 80GB), LoRA rank 32 | 8 GPUs, LoRA rank 64 |
-| Status | Trained and evaluated (results above) | Table built and classical baselines evaluated; **no LLM training run yet** |
-| Guide | [`docs/active_space_candidates.md`](docs/active_space_candidates.md) | [Full pipeline](#full-pipeline-active_space) below |
+|            | `active_space_candidates` (trained)                                                     | `active_space` (full pipeline)                                                                      |
+| ---------- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Data       | Precomputed Phasecraft DZVP table ([`data/phasecraft_tables/`](data/phasecraft_tables/)) | Built here from scratch: PySCF RHF → localization → MP2 accuracy proxy → OpenFermion/Qualtran cost |
+| Materials  | 24 (16 train / 8 test)                                                                    | 46 (27 train / 5 validation / 14 test with the fast SZV table)                                        |
+| Agent sees | Per-candidate summary: size, energy window, atomic character, log10 Toffoli cost          | Per-orbital table: energies, occupations, atomic character                                            |
+| β         | 0.2 (fixed by the table)                                                                  | Chosen automatically to maximize the diversity of oracle sizes                                        |
+| Training   | 2 GPUs (Brev, 2× A100 80GB), LoRA rank 32                                                | 8 GPUs, LoRA rank 64                                                                                  |
+| Status     | Trained and evaluated (results above)                                                     | Table built and classical baselines evaluated; **no LLM training run yet**                      |
+| Guide      | [`docs/active_space_candidates.md`](docs/active_space_candidates.md)                     | [Full pipeline](#full-pipeline-active_space) below                                                     |
 
 In both environments an episode looks the same. The agent calls `get_structure(material_id)` and
 `get_orbitals(material_id, candidate_id)` to inspect the material and its menu, then
@@ -92,7 +130,7 @@ training/
   launch_grpo.sh, launch_grpo_candidates.sh, export_checkpoint.sh, convert_hf_to_megatron.py
 serving/serve_vllm.sh             Red Hat AI Inference Server (vLLM) for the full pipeline
 brev/run_on_brev.sh               One-command driver for the candidates experiment on an NVIDIA Brev GPU box
-docs/                             Candidates guide, figures and result summaries
+docs/                             Candidates guide, figures, result summaries and demo screenshots
 ```
 
 ## Quickstart
@@ -147,30 +185,30 @@ TAG=grpo bash scripts/run_eval.sh
 
 ## Full pipeline (`active_space`)
 
-| Step | What | Where |
-| --- | --- | --- |
-| 1 | 46 Phasecraft materials → MP ids, Wannier counts, CIFs | `scripts/01_fetch_materials.py`, `active_space/sources.py` |
-| 2 | PySCF `pbc` RHF (Γ point, fixed GTH basis/pseudo, supercell rule), Pipek–Mezey localization | `active_space/pipeline.py` |
-| 3 | Fixed menu: `frontier` or `<El>-<nl>` selection × sizes 2–20, CAS(n,n) | `pipeline.make_menu` |
-| 4 | Accuracy = active-space MP2 pair energy / total MP2 correlation (plus NO proxy, CASCI ≤ 12 orbitals). Cost = DF factorization + λ (OpenFermion) → Toffolis/step + logical qubits (Qualtran) × ⌈πλ/2ΔE⌉ | `pipeline.py`, `active_space/cost.py` |
-| 5 | score = accuracy − β·log10(Toffolis); oracle = argmax; writes `scores.json` (verify-only) and `orbitals.json` (agent-visible) | `scripts/03_build_table.py`, `active_space/table.py` |
-| 6 | Whole families held out (test: TM binary oxides, III-V/II-VI semiconductors, halide perovskites; validation: layered oxides) | `active_space/families.py`, `configs/phase1.yaml` |
-| 7–9 | NeMo Gym server: prompt (structure + orbital table, no scores), tools, `verify()` = 0 if invalid/off-menu else (score − worst)/(best − worst) | `resources_servers/active_space/` |
-| 10 | Baselines: untrained Lightning (Red Hat vLLM + Gym rollouts), AVAS-style projection, MP2 natural-orbital threshold, best fixed size, random | `serving/serve_vllm.sh`, `scripts/run_eval.sh`, `scripts/05_evaluate.py` |
-| 11 | GRPO, 16 rollouts per material, LoRA on Megatron, 1 node × 8 GPUs | `training/` |
-| 12 | Held-out mean reward, ≤5%-of-oracle rate, Spearman/MAE vs Phasecraft Wannier counts | `scripts/05_evaluate.py` |
+| Step | What                                                                                                                                                                                                            | Where                                                                          |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| 1    | 46 Phasecraft materials → MP ids, Wannier counts, CIFs                                                                                                                                                         | `scripts/01_fetch_materials.py`, `active_space/sources.py`                 |
+| 2    | PySCF `pbc` RHF (Γ point, fixed GTH basis/pseudo, supercell rule), Pipek–Mezey localization                                                                                                                 | `active_space/pipeline.py`                                                   |
+| 3    | Fixed menu: `frontier` or `<El>-<nl>` selection × sizes 2–20, CAS(n,n)                                                                                                                                    | `pipeline.make_menu`                                                         |
+| 4    | Accuracy = active-space MP2 pair energy / total MP2 correlation (plus NO proxy, CASCI ≤ 12 orbitals). Cost = DF factorization + λ (OpenFermion) → Toffolis/step + logical qubits (Qualtran) × ⌈πλ/2ΔE⌉ | `pipeline.py`, `active_space/cost.py`                                      |
+| 5    | score = accuracy − β·log10(Toffolis); oracle = argmax; writes `scores.json` (verify-only) and `orbitals.json` (agent-visible)                                                                            | `scripts/03_build_table.py`, `active_space/table.py`                       |
+| 6    | Whole families held out (test: TM binary oxides, III-V/II-VI semiconductors, halide perovskites; validation: layered oxides)                                                                                    | `active_space/families.py`, `configs/phase1.yaml`                          |
+| 7–9 | NeMo Gym server: prompt (structure + orbital table, no scores), tools, `verify()` = 0 if invalid/off-menu else (score − worst)/(best − worst)                                                               | `resources_servers/active_space/`                                            |
+| 10   | Baselines: untrained Lightning (Red Hat vLLM + Gym rollouts), AVAS-style projection, MP2 natural-orbital threshold, best fixed size, random                                                                     | `serving/serve_vllm.sh`, `scripts/run_eval.sh`, `scripts/05_evaluate.py` |
+| 11   | GRPO, 16 rollouts per material, LoRA on Megatron, 1 node × 8 GPUs                                                                                                                                              | `training/`                                                                  |
+| 12   | Held-out mean reward, ≤5%-of-oracle rate, Spearman/MAE vs Phasecraft Wannier counts                                                                                                                            | `scripts/05_evaluate.py`                                                     |
 
 **Status (fast GTH-SZV table).** All 46 materials ran and every SCF converged, giving 27 train / 5 validation / 14
 test materials with 24–50 menu entries each. With auto β = 0.056, oracle sizes span 2–20 with 23 different
 selections. Classical baselines on the held-out test families:
 
-| Method | Mean reward | Within 5% of oracle | Spearman vs Wannier |
-| --- | --- | --- | --- |
-| Oracle | 1.000 | 1.000 | 0.65 |
-| MP2 natural-orbital threshold | 0.416 | 0.000 | 0.58 |
-| AVAS-style projection | 0.223 | 0.071 | 0.75 |
-| Best fixed size on train (frontier:4) | 0.187 | 0.000 | 0.48 |
-| Random menu entry | 0.296 | 0.055 | 0.67 |
+| Method                                | Mean reward | Within 5% of oracle | Spearman vs Wannier |
+| ------------------------------------- | ----------- | ------------------- | ------------------- |
+| Oracle                                | 1.000       | 1.000               | 0.65                |
+| MP2 natural-orbital threshold         | 0.416       | 0.000               | 0.58                |
+| AVAS-style projection                 | 0.223       | 0.071               | 0.75                |
+| Best fixed size on train (frontier:4) | 0.187       | 0.000               | 0.48                |
+| Random menu entry                     | 0.296       | 0.055               | 0.67                |
 
 LLM rows for this environment would come from `scripts/run_eval.sh` + `scripts/05_evaluate.py`; they have not been
 run. For final numbers, re-run `02`/`03` with the default DZVP config on a bigger CPU box.
