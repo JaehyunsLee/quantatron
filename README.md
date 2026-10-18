@@ -54,7 +54,9 @@ group-relative advantage vanishes and the policy stops changing.
 
 Untrained vs. GRPO-trained model against a random pick, on the training materials and on held-out materials.
 
-## Two environments
+![Untrained vs. GRPO-trained vs. random on training and held-out materials](docs/figures/candidates_test_results.png)
+
+Two environments
 
 The repo has two environments for the same task. They share the tools, the reward and the verify-only scoring, but
 differ in where the data comes from and how much the agent sees.
@@ -164,7 +166,7 @@ TAG=grpo bash scripts/run_eval.sh
 
 **Status (fast GTH-SZV table).** All 46 materials ran and every SCF converged, giving 27 train / 5 validation / 14
 test materials with 24–50 menu entries each. With auto β = 0.056, oracle sizes span 2–20 with 23 different
-selections. 
+selections.
 
 ### Design decisions
 
