@@ -54,42 +54,6 @@ group-relative advantage vanishes and the policy stops changing.
 
 Untrained vs. GRPO-trained model against a random pick, on the training materials and on held-out materials.
 
-## Results
-
-On 8 held-out materials from two chemical families never seen in training (transition-metal binary oxides and ionic
-salts), 16 rollouts per material:
-
-| Method                                   | Mean test reward [95% CI]      | Near-oracle rate | Valid answers |
-| ---------------------------------------- | ------------------------------ | ---------------- | ------------- |
-| Random menu entry                        | 0.399 [0.303, 0.502]           | 0.148            | 1.00          |
-| Rule: largest candidate                  | **0.741** [0.459, 0.965] | 0.500            | 1.00          |
-| Rule: tightest energy window per orbital | 0.693 [0.437, 0.909]           | 0.250            | 1.00          |
-| Nemotron 3.5 Lightning, base             | 0.404 [0.238, 0.588]           | 0.078            | 0.98          |
-| Nemotron 3.5 Lightning, GRPO (v2 run)    | 0.411 [0.238, 0.602]           | 0.078            | 0.95          |
-| Qwen3-1.7B, base                         | 0.359 [0.191, 0.553]           | 0.164            | 0.87          |
-
-The oracle scores 1.0 by construction. CIs are bootstrapped over materials. Near-oracle means reward ≥ 0.95.
-
-![Held-out test results](docs/figures/candidates_test_results.png)
-
-**What this shows:**
-
-- **GRPO did not measurably improve the model.** The test reward went from 0.404 to 0.411, well inside the base model's
-  confidence interval. The training reward stayed flat at about 0.47 over 32 steps
-  ([training curves](docs/figures/candidates_training_curves.png)). An earlier v1 run (20 steps, lower learning rate)
-  gave the same picture: 0.389 → 0.421.
-- **Neither model beats random by much, but a one-line rule does.** "Pick the largest candidate" scores 0.741. At
-  β = 0.2 the spread in recovered correlation within a menu (~0.56) outweighs the spread in the cost term (~0.31), so
-  bigger is usually better. The models show no overall size bias: their average pick sits at the same place in the
-  menu as the oracle's, and they choose the largest candidate in 29–40% of answers. They lose on *which* materials
-  they go big on.
-- **The environment works.** Answers are almost always valid. The test split cannot leak into training. The base and
-  trained models are served with identical settings. So the reward is a clean signal that a stronger setup (more
-  steps, more materials, a reward shaped around the size trade-off) can be measured against.
-
-Full table including majority votes: [`docs/results/candidates_test_table.md`](docs/results/candidates_test_table.md).
-Per-material results: [`docs/figures/candidates_test_per_material.png`](docs/figures/candidates_test_per_material.png).
-
 ## Two environments
 
 The repo has two environments for the same task. They share the tools, the reward and the verify-only scoring, but
@@ -200,18 +164,7 @@ TAG=grpo bash scripts/run_eval.sh
 
 **Status (fast GTH-SZV table).** All 46 materials ran and every SCF converged, giving 27 train / 5 validation / 14
 test materials with 24–50 menu entries each. With auto β = 0.056, oracle sizes span 2–20 with 23 different
-selections. Classical baselines on the held-out test families:
-
-| Method                                | Mean reward | Within 5% of oracle | Spearman vs Wannier |
-| ------------------------------------- | ----------- | ------------------- | ------------------- |
-| Oracle                                | 1.000       | 1.000               | 0.65                |
-| MP2 natural-orbital threshold         | 0.416       | 0.000               | 0.58                |
-| AVAS-style projection                 | 0.223       | 0.071               | 0.75                |
-| Best fixed size on train (frontier:4) | 0.187       | 0.000               | 0.48                |
-| Random menu entry                     | 0.296       | 0.055               | 0.67                |
-
-LLM rows for this environment would come from `scripts/run_eval.sh` + `scripts/05_evaluate.py`; they have not been
-run. For final numbers, re-run `02`/`03` with the default DZVP config on a bigger CPU box.
+selections. 
 
 ### Design decisions
 
